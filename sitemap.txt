@@ -1,4 +1,4 @@
-https://snakesystem.github.io
+https://snakesystem.github.io/
 https://snakesystem.github.io/#home
 https://snakesystem.github.io/#about
 https://snakesystem.github.io/#resume
