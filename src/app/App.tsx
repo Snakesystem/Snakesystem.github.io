@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import About from './pages/About'
@@ -12,11 +13,15 @@ function App() {
     <div className="index-page">
       <Header/>
         <main className="main">
-          <Home/>
-          <About/>
-          <Stats/>
-          <Skils/>
-          <Resume/>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/about" element={<About/>} />
+              <Route path="/resume" element={<Resume/>} />
+              <Route path="/skils" element={<Skils/>} />
+              <Route path="/stats" element={<Stats/>} />
+            </Routes>
+          </BrowserRouter>
         </main>
       <Footer/>
     </div>

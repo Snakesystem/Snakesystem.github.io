@@ -18,7 +18,7 @@ export default function Header() {
 
     <a href="index.html" className="logo d-flex align-items-center justify-content-center">
       {/* <img src="assets/img/logo.png" alt="">  */}
-      <h1 className="sitename">Alex Smith</h1>
+      <h1 className="sitename">Feri Irawansyah</h1>
     </a>
 
     <div className="social-links text-center">
