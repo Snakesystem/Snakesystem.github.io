@@ -1,26 +1,26 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Home from "./Home";
-import Portfolio from "./Portfolio";
-import Experience from "./Experience";
-import About from "./About";
-import Contact from "./Contact";
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import About from './pages/About'
+import Home from './pages/Home'
+import Resume from './pages/Resume'
+import Skils from './pages/Skils'
+import Stats from './pages/Stats'
 
-export default function App() {
+function App() {
+
   return (
-    <BrowserRouter>
-      <div className="bg-gray-800 text-white min-h-screen">
-        <Navbar />
-        <main className="container mx-auto py-10">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+    <div className="index-page">
+      <Header/>
+        <main className="main">
+          <Home/>
+          <About/>
+          <Stats/>
+          <Skils/>
+          <Resume/>
         </main>
-      </div>
-    </BrowserRouter>
+      <Footer/>
+    </div>
   )
 }
+
+export default App
