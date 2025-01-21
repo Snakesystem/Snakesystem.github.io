@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import About from './pages/About'
@@ -11,17 +11,18 @@ function App() {
 
   return (
     <div className="index-page">
+      <Helmet>
+        <title>Feri Irawansyah | Snakesystem</title>
+        <meta name="description" content="Feri Irawansyah | Snakesystem" data-rh="true"/>
+        <link rel="canonical" href="/" />
+      </Helmet>
       <Header/>
         <main className="main">
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home/>} />
-              <Route path="/about" element={<About/>} />
-              <Route path="/resume" element={<Resume/>} />
-              <Route path="/skils" element={<Skils/>} />
-              <Route path="/stats" element={<Stats/>} />
-            </Routes>
-          </BrowserRouter>
+          <Home/>
+          <About/>
+          <Stats/>
+          <Skils/>
+          <Resume/>
         </main>
       <Footer/>
     </div>

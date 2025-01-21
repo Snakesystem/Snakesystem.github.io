@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export default function Header() {
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -31,7 +31,7 @@ export default function Header() {
 
     <nav id="navmenu" className="navmenu">
       <ul>
-        <li><a href="#hero" className="active"><i className="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#home" className="active"><i className="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i className="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i className="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i className="bi bi-images navicon"></i> Portfolio</a></li>

@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <section id="hero" className="hero section dark-background">
+    <section id="home" className="hero section dark-background">
 
       <img src="/img/hero-bg.jpg" alt="" data-aos="fade-in" className=""/>
 
