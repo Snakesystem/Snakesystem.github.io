@@ -1,7 +1,14 @@
+import { Section } from "../App";
+import { motion } from "framer-motion";
 
-export default function Resume() {
+export default function Resume({ section, sectionRefs }: { section: Section; sectionRefs: any }) {
   return (
-    <section id="resume" className="resume section">
+    <motion.section id="resume" 
+        className="resume section"
+        initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+        ref={(el) => (sectionRefs.current[section.id] = el)}>
 
       <div className="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
@@ -74,6 +81,6 @@ export default function Resume() {
 
       </div>
 
-    </section>
+    </motion.section>
   )
 }

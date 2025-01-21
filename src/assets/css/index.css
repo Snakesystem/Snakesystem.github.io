@@ -262,7 +262,7 @@ h6 {
 .navmenu ul {
   list-style: none;
   padding: 0 0 20px 0;
-  margin: 0 0 0 1.5rem;
+  margin: 0 1.5rem;
 }
 
 .navmenu a,
@@ -311,6 +311,7 @@ h6 {
 .navmenu .active,
 .navmenu .active:focus {
   color: var(--nav-hover-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
 }
 
 .navmenu a:hover .navicon,

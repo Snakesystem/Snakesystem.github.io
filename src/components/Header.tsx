@@ -1,8 +1,32 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { Section } from "../app/App";
 
-export default function Header() {
+export default function Header({ sections, sectionRefs }: { sections: Section[]; sectionRefs: any }) {
 
   const [isOpen, setIsOpen] = useState(true);
+  const [activeSection, setActiveSection] = useState<string>(window.location.hash.slice(1) || "home");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.id;
+            setActiveSection(sectionId); // Perbarui active section
+            window.history.replaceState(null, "", `#${sectionId}`); // Perbarui URL
+          }
+        });
+      },
+      { threshold: 0.6 } // Elemen dianggap terlihat jika 60% masuk viewport
+    );
+
+    // Observasi setiap elemen yang direferensikan
+    Object.values(sectionRefs.current).forEach((ref: any) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect(); // Membersihkan observer saat komponen di-unmount
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -31,12 +55,22 @@ export default function Header() {
 
     <nav id="navmenu" className="navmenu">
       <ul>
-        <li><a href="#home" className="active"><i className="bi bi-house navicon"></i>Home</a></li>
+        {sections?.map((section: any) => (
+          <li key={section.id}>
+            <a
+            className={activeSection === section.id ? "active" : ""}
+              href={`#${section.id}`}
+            ><i className={`${section.icon} navicon`}></i>
+              {section.title}
+            </a>
+          </li>
+        ))}
+        {/* <li><a href="#home" className="active"><i className="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i className="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i className="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i className="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i className="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li className="dropdown"><a href="#"><i className="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li><a href="#services"><i className="bi bi-hdd-stack navicon"></i> Services</a></li> */}
+        {/* <li className="dropdown"><a href="#"><i className="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">Dropdown 1</a></li>
             <li className="dropdown"><a href="#"><span>Deep Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -53,7 +87,7 @@ export default function Header() {
             <li><a href="#">Dropdown 4</a></li>
           </ul>
         </li>
-        <li><a href="#contact"><i className="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#contact"><i className="bi bi-envelope navicon"></i> Contact</a></li> */}
       </ul>
     </nav>
 

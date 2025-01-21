@@ -1,7 +1,15 @@
+import { motion } from 'framer-motion';
+import { Section } from '../App';
 
-export default function Home() {
+export default function Home({ section, sectionRefs }: { section: Section; sectionRefs: any }) {
   return (
-    <section id="home" className="hero section dark-background">
+    <motion.section 
+        id="home" 
+        initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+        className="hero section dark-background" 
+        ref={(el) => (sectionRefs.current[section.id] = el)}>
 
       <img src="/img/hero-bg.jpg" alt="" data-aos="fade-in" className=""/>
 
@@ -10,6 +18,6 @@ export default function Home() {
         <p>I'm <span className="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
-    </section>
+    </motion.section>
   )
 }

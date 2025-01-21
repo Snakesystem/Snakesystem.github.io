@@ -1,7 +1,14 @@
+import { motion } from 'framer-motion'
+import { Section } from '../App';
 
-export default function About() {
+export default function About({ section, sectionRefs }: { section: Section; sectionRefs: any }) {
   return (
-    <section id="about" className="about section">
+    <motion.section id="about" 
+        className="about section"
+        initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+        ref={(el) => (sectionRefs.current[section.id] = el)}>
 
       <div className="container section-title" data-aos="fade-up">
         <h2>About</h2>
@@ -47,6 +54,6 @@ export default function About() {
 
       </div>
 
-    </section>
+    </motion.section>
   )
 }
