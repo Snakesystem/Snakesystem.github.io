@@ -90,6 +90,17 @@ export default function Header({ sections, sectionRefs }: { sections: Section[];
         <li><a href="#contact"><i className="bi bi-envelope navicon"></i> Contact</a></li> */}
       </ul>
     </nav>
+    <nav className="footer-nav">
+      <ul className="list-unstyled">
+        <li className="copyright">
+          <p>© <span>Copyright</span> <strong className="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+        </li>
+        <li className="credits">
+          <img src="/img/logo-ss.png" alt="" />
+          <a href="https://github.com/Snakesystem">Snakesystem</a>
+        </li>
+      </ul>
+    </nav>
 
   </header>
   )

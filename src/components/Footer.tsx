@@ -8,7 +8,8 @@ export default function Footer() {
             <p>© <span>Copyright</span> <strong className="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
         </div>
         <div className="credits">
-            <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            <img src="/img/logo-ss.png" alt="" />
+            <a href="https://github.com/Snakesystem">Snakesystem</a>
         </div>
         </div>
 
