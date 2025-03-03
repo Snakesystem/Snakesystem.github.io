@@ -1,1 +1,5 @@
-<h1>App</h1>
+<script lang="ts">
+    import Notfound from "./pages/Notfound.svelte";
+
+</script>
+<Notfound/>
