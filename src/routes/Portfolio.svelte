@@ -2,29 +2,13 @@
   import { onMount } from 'svelte';
   import Isotope from 'isotope-layout';
   import GLightbox from 'glightbox';
-  const portfolioData = [
-    {
-      title: "App 1",
-      category: "app",
-      image: "/img/masonry-portfolio/masonry-portfolio-1.jpg",
-      gallery: "portfolio-gallery-app"
-    },
-    {
-      title: "Product 1",
-      category: "product",
-      image: "/img/masonry-portfolio/masonry-portfolio-2.jpg",
-      gallery: "portfolio-gallery-product"
-    },
-    {
-      title: "Branding 1",
-      category: "branding", 
-      image: "/img/masonry-portfolio/masonry-portfolio-3.jpg",
-      gallery: "portfolio-gallery-branding"
-    },
-    // ...lanjut
-  ];
+  import { openModal } from '../lib/app'
+  import ModalContainer from '../lib/ModalContainer.svelte';
+  import PortfolioDetail from './PortfolioDetail.svelte';
+  import { data } from '../portfolio-data.json';
 
   let iso = null;
+  let detailData = $state({});
 
   onMount(() => {
     const container = document.querySelector('.isotope-container');
@@ -43,7 +27,16 @@
       });
     });
 
-    GLightbox({ selector: '.glightbox' });
+    GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+      zoomable: true,
+      moreText: 'Lihat Selengkapnya',
+      plyr: { css: '', js: '' },
+      descPosition: 'left',
+    });
+
   });
 </script>
 
@@ -57,24 +50,34 @@
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
       <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
         <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-app">App</li>
-        <li data-filter=".filter-product">Card</li>
-        <li data-filter=".filter-branding">Web</li>
+        <li data-filter=".filter-web-api">Web API</li>
+        <li data-filter=".filter-frontend">Frontend</li>
+        <li data-filter=".filter-others">Others</li>
       </ul>
 
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-        {#each portfolioData as item}
+        {#each data as item}
           <div class={`col-lg-4 col-md-6 portfolio-item isotope-item filter-${item.category}`}>
             <img src={item.image} class="img-fluid" alt={item.title} />
             <div class="portfolio-info">
               <h4>{item.title}</h4>
               <p>Lorem ipsum, dolor sit</p>
-              <a href={item.image} title={item.title} data-gallery={item.gallery} class="glightbox preview-link" aria-label={item.title}>
+              <a href={item.image}
+                title={item.title}
+                data-gallery={item.gallery}
+                data-description={item.description}
+                class="glightbox preview-link"
+                aria-label={item.title}
+              >
                 <i class="bi bi-zoom-in"></i>
               </a>
-              <a href="portfolio-details.html" title="More Details" class="details-link" aria-label="More Details">
+
+              <button onclick={() => {
+                openModal("portfolio-detail");
+                detailData = item
+              }} title="More Details" class="details-link" aria-label="More Details">
                 <i class="bi bi-link-45deg"></i>
-              </a>
+              </button>
             </div>
           </div>
         {/each}
@@ -82,6 +85,9 @@
     </div>
   </div>
 </section>
+<ModalContainer title="Modal title" size="xl" id="portfolio-detail">
+  <PortfolioDetail data={detailData}/>
+</ModalContainer>
 
 <style>
   /* optional: bi icon support if belum ada */

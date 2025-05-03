@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+          "title": "Snakesystem Web API",
+          "category": "web-api",
+          "image": "/img/portfolio/snakesystem-web-api.jpeg",
+          "gallery": "portfolio-gallery-web-api",
+          "description": "RESTful API untuk sistem internal Snake yang scalable dan secure. Dilengkapi dengan fitur authentikasi JWT. dan dokumentasi OpenAPI."
+        },
+        {
+          "title": "S21 + Web Back Office",
+          "category": "frontend",
+          "image": "/img/portfolio/web-bo.jpeg",
+          "gallery": "portfolio-gallery-frontend",
+          "description": "Katalog produk dengan desain responsif dan animasi interaktif."
+        },
+        {
+          "title": "Others",
+          "category": "others", 
+          "image": "/img/masonry-portfolio/masonry-portfolio-3.jpg",
+          "gallery": "portfolio-gallery-others",
+          "description": "Proyek branding digital untuk startup teknologi kreatif."
+        }
+      ]
+}

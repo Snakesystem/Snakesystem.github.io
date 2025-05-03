@@ -1,3 +1,24 @@
+<script>
+  function hitungUsia(tanggalLahir) {
+    const today = new Date();
+    const birthDate = new Date(tanggalLahir);
+
+    let usia = today.getFullYear() - birthDate.getFullYear();
+    const bulan = today.getMonth() - birthDate.getMonth();
+    const hari = today.getDate() - birthDate.getDate();
+
+    // Kalau bulan atau hari belum lewat tahun ini, usia dikurangi 1
+    if (bulan < 0 || (bulan === 0 && hari < 0)) {
+      usia--;
+    }
+
+    return usia;
+  }
+
+  // Contoh penggunaan
+  const usiaSekarang = hitungUsia('2000-06-09');
+</script>
+
 <section id="about" class="about section">
 
     <!-- Section Title -->
@@ -21,17 +42,17 @@
           <div class="row">
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>9 June 2000</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>snakesystem.github.io</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 82323443535</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>DKI Jakarta, Indonesia</span></li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{usiaSekarang}</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>feryirawansyah09@gmail.com</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
               </ul>
             </div>
