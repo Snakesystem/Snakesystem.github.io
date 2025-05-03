@@ -24,3 +24,12 @@
     </div>
   </div>
 </section>
+
+<style>
+  /* Mobile */
+  @media screen and (max-width: 768px) {
+    img {
+      object-position: left center; /* atau center center kalau lo mau pindah ke tengah */
+    }
+  }
+</style>

@@ -8,6 +8,20 @@
           "description": "RESTful API untuk sistem internal Snake yang scalable dan secure. Dilengkapi dengan fitur authentikasi JWT. dan dokumentasi OpenAPI."
         },
         {
+          "title": "Snakesystem Onboarding Client",
+          "category": "frontend",
+          "image": "/img/portfolio/snakesystem-onboarding-client.jpeg",
+          "gallery": "portfolio-gallery-frontend",
+          "description": "Katalog produk dengan desain responsif dan animasi interaktif."
+        },
+        {
+          "title": "UBS Trade Dashboard",
+          "category": "frontend",
+          "image": "/img/portfolio/ubs-trade.jpeg",
+          "gallery": "portfolio-gallery-frontend",
+          "description": "Katalog produk dengan desain responsif dan animasi interaktif."
+        },
+        {
           "title": "S21 + Web Back Office",
           "category": "frontend",
           "image": "/img/portfolio/web-bo.jpeg",
@@ -15,9 +29,37 @@
           "description": "Katalog produk dengan desain responsif dan animasi interaktif."
         },
         {
-          "title": "Others",
+          "title": "S21 + Web Monitoring Bank",
+          "category": "frontend",
+          "image": "/img/portfolio/monitoring.jpeg",
+          "gallery": "portfolio-gallery-frontend",
+          "description": "Katalog produk dengan desain responsif dan animasi interaktif."
+        },
+        {
+          "title": "Sadana Administration System",
+          "category": "frontend",
+          "image": "/img/portfolio/sadana.jpeg",
+          "gallery": "portfolio-gallery-frontend",
+          "description": "Katalog produk dengan desain responsif dan animasi interaktif."
+        },
+        {
+          "title": "S21 + Web Company Profile",
+          "category": "frontend",
+          "image": "/img/portfolio/mpc-company.jpeg",
+          "gallery": "portfolio-gallery-frontend",
+          "description": "Katalog produk dengan desain responsif dan animasi interaktif."
+        },
+        {
+          "title": "Opening Account",
           "category": "others", 
-          "image": "/img/masonry-portfolio/masonry-portfolio-3.jpg",
+          "image": "/img/portfolio/pilarmas.jpeg",
+          "gallery": "portfolio-gallery-others",
+          "description": "Proyek branding digital untuk startup teknologi kreatif."
+        },
+        {
+          "title": "U-Trade",
+          "category": "others", 
+          "image": "/img/portfolio/utrade.jpeg",
           "gallery": "portfolio-gallery-others",
           "description": "Proyek branding digital untuk startup teknologi kreatif."
         }

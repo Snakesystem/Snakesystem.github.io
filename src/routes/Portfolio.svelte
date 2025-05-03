@@ -6,15 +6,20 @@
   import ModalContainer from '../lib/ModalContainer.svelte';
   import PortfolioDetail from './PortfolioDetail.svelte';
   import { data } from '../portfolio-data.json';
+  import imagesLoaded from 'imagesloaded';
 
   let iso = null;
   let detailData = $state({});
 
   onMount(() => {
     const container = document.querySelector('.isotope-container');
-    iso = new Isotope(container, {
-      itemSelector: '.isotope-item',
-      layoutMode: 'masonry'
+  
+    // Tunggu semua gambar di container selesai dimuat sebelum inisialisasi
+    (imagesLoaded as any)(container, () => {
+      iso = new Isotope(container, {
+        itemSelector: '.isotope-item',
+        layoutMode: 'masonry',
+      });
     });
 
     const filters = document.querySelectorAll('.portfolio-filters li');
@@ -23,7 +28,7 @@
         filters.forEach(el => el.classList.remove('filter-active'));
         filter.classList.add('filter-active');
         const filterValue = filter.getAttribute('data-filter');
-        iso.arrange({ filter: filterValue });
+        iso?.arrange({ filter: filterValue });
       });
     });
 
@@ -36,7 +41,6 @@
       plyr: { css: '', js: '' },
       descPosition: 'left',
     });
-
   });
 </script>
 
@@ -55,7 +59,7 @@
         <li data-filter=".filter-others">Others</li>
       </ul>
 
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-4 isotope-container custom-container" data-aos="fade-up" data-aos-delay="200">
         {#each data as item}
           <div class={`col-lg-4 col-md-6 portfolio-item isotope-item filter-${item.category}`}>
             <img src={item.image} class="img-fluid" alt={item.title} />
@@ -91,4 +95,9 @@
 
 <style>
   /* optional: bi icon support if belum ada */
+  .custom-container {
+    max-height: 500px;
+    overflow-y: scroll;
+    /* background-color: salmon; */
+  }
 </style>

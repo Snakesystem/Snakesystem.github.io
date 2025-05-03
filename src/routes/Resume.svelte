@@ -45,27 +45,23 @@
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
           <h3 class="resume-title">Professional Experience</h3>
           <div class="resume-item">
-            <h4>Senior graphic design specialist</h4>
-            <h5>2019 - Present</h5>
-            <p><em>Experion, New York, NY </em></p>
+            <h4>Web Developer</h4>
+            <h5>2022 - Present</h5>
+            <p><em>PT S21 Micropiranti Computer, Jakarta, Indonesia</em></p>
             <ul>
-              <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-              <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-              <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              <li>Membuat website company profile untuk perusahaan</li>
+              <li>Developed and maintained responsive web applications for various client industries using modern web technologies (HTML5, CSS3, JavaScript, and popular frameworks like React and Angular). </li>
+              <li>Collaborated closely with UI/UX designers and backend developers to deliver tailored software solutions aligned with client requirements.</li>
+              <li>Integrated RESTful APIs and worked with databases ( Microsoft SQL Server) to support dynamic content.</li>
+              <li>Participated in code reviews, sprint planning, and regular stand-up meetings as part of an Agile development team.</li>
+              <li>Provided technical support, debugging, and post-deployment maintenance for delivered projects.</li>
+              <li>Contributed to documentation and user manuals for clients and internal teams.</li>
             </ul>
           </div><!-- Edn Resume Item -->
 
           <div class="resume-item">
-            <h4>Graphic design specialist</h4>
-            <h5>2017 - 2018</h5>
-            <p><em>Stepping Stone Advertising, New York, NY</em></p>
-            <ul>
-              <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-              <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-              <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-            </ul>
+            <h4>More Experience</h4>
+            <a target="_blank" class="btn btn-primary btn-sm w-100" href="https://www.linkedin.com/in/feri-irawansyah/">See More Experience</a>
           </div><!-- Edn Resume Item -->
 
         </div>
