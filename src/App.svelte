@@ -3,6 +3,7 @@
   import Header from "./components/Header.svelte";
   import Stats from "./components/Stats.svelte";
   import About from "./routes/About.svelte";
+  import Blog from "./routes/Blog.svelte";
   import Contact from "./routes/Contact.svelte";
   import Hero from "./routes/Hero.svelte";
   import Portfolio from "./routes/Portfolio.svelte";
@@ -90,8 +91,12 @@
      <Service/>
     <!-- /Services Section -->
 
+    <!-- Blog Section -->
+     <Blog/>
+    <!-- /Blog Section -->
+
     <!-- Testimonials Section -->
-     <Testimoni/>
+    <Testimoni/>
     <!-- /Testimonials Section -->
 
     <!-- Contact Section -->

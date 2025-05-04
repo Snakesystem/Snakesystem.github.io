@@ -1,3 +1,28 @@
+<script>
+  let formData = $state({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  async function submit() {
+    const response = await fetch("http://localhost:8000/api/v1/email/contact", {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json",
+      }
+    });
+    if (response.ok) {
+      alert("Message sent");
+    } else {
+      alert("Error sending message");
+    }
+  }
+
+</script>
+
 <section id="contact" class="contact section">
 
     <!-- Section Title -->
@@ -38,23 +63,26 @@
         </div>
 
         <div class="col-lg-8">
-          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <form class="php-email-form" data-aos="fade-up" data-aos-delay="200" onsubmit={(e) => {
+            e.preventDefault();
+            submit();
+          }}>
             <div class="row gy-4">
 
               <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required bind:value={formData.name}>
               </div>
 
               <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required bind:value={formData.email}>
               </div>
 
               <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required bind:value={formData.subject}>
               </div>
 
               <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required bind:value={formData.message}></textarea>
               </div>
 
               <div class="col-md-12 text-center">

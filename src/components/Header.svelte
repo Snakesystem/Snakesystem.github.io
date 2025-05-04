@@ -53,6 +53,7 @@
         <li><a href="#resume" onclick={() => isMenuOpen = false}><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
         <li><a href="#portfolio" onclick={() => isMenuOpen = false}><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
         <li><a href="#services" onclick={() => isMenuOpen = false}><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="#blog" onclick={() => isMenuOpen = false}><i class="bi bi-journal navicon"></i><span>Catatan</span></a></li>
         <li><a href="#contact" onclick={() => isMenuOpen = false}><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>

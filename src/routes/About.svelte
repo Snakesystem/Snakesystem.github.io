@@ -1,4 +1,6 @@
 <script>
+  import Badge from "../components/Badge.svelte";
+
   function hitungUsia(tanggalLahir) {
     const today = new Date();
     const birthDate = new Date(tanggalLahir);
@@ -17,6 +19,7 @@
 
   // Contoh penggunaan
   const usiaSekarang = hitungUsia('2000-06-09');
+  const experience = hitungUsia('2021-02-04');
 </script>
 
 <section id="about" class="about section">
@@ -30,8 +33,11 @@
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
       <div class="row gy-4 justify-content-center">
-        <div class="col-lg-4">
+        <div class="col-lg-4 d-flex about-img">
           <img src="/img/profile-img.jpg" class="img-fluid" alt="">
+          <div class="badge-container">
+            <Badge text={experience} />
+          </div>
         </div>
         <div class="col-lg-8 content">
           <h2>Software Engineer &amp; Developer.</h2>
@@ -57,13 +63,20 @@
               </ul>
             </div>
           </div>
-          <p class="py-3">
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-          </p>
         </div>
       </div>
 
     </div>
 
   </section>
+
+  <style>
+    .badge-container {
+      position: absolute;
+      bottom: -20%;
+      right: -20%;
+    }
+    .about-img {
+      position: relative;
+    }
+  </style>

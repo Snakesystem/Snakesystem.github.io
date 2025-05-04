@@ -39,7 +39,6 @@
             <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
           </div>
 
-
         </div>
 
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
@@ -49,7 +48,7 @@
             <h5>2022 - Present</h5>
             <p><em>PT S21 Micropiranti Computer, Jakarta, Indonesia</em></p>
             <ul>
-              <li>Membuat website company profile untuk perusahaan</li>
+              <li>Create a company profile website for your company</li>
               <li>Developed and maintained responsive web applications for various client industries using modern web technologies (HTML5, CSS3, JavaScript, and popular frameworks like React and Angular). </li>
               <li>Collaborated closely with UI/UX designers and backend developers to deliver tailored software solutions aligned with client requirements.</li>
               <li>Integrated RESTful APIs and worked with databases ( Microsoft SQL Server) to support dynamic content.</li>
@@ -65,9 +64,6 @@
           </div><!-- Edn Resume Item -->
 
         </div>
-
       </div>
-
     </div>
-
   </section>
