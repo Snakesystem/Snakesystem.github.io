@@ -1465,7 +1465,7 @@ section,
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 100px;
+    top: 50px;
     align-self: flex-start;
     height: fit-content;
     /* Optional padding/background */

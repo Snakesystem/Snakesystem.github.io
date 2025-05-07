@@ -59,7 +59,7 @@
       position: -webkit-sticky; /* Untuk Safari */
       border: none;
       position: sticky;
-      top: 100px; /* Setiap card akan sticky dengan jarak top */
+      top: 70px; /* Setiap card akan sticky dengan jarak top */
       width: 100%;
       margin: 20px auto;
       border-radius: 10px;

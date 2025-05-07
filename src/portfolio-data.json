@@ -120,20 +120,87 @@
             "title": "Rust",
             "description": "Rust merupakan bahasa pemrograman yang saya pelajari sejak kuliah semester 6. Awalnya saya mempelajari pyhton untuk AI, kemudian saya mendapat informasi 'Katanya Rust Juga Bisa untuk AI loh...', sejak saat itu saya tertarik meskipun memang benar faktanya bahwa rust memang bahasa pemrograman paling ngeselin karena borrow checknya. Namun Rust tetap menjadi bahasa pemrograman favorit saya sampai sekarang dan lebih fokus untuk mengembangkan aplikasi backend dan web api untuk saat ini.",
             "url": "#",
-            "image": "/img/skills/rust.jpeg",
+            "image": "/img/skills/rust.png",
             "updated_at": "Februari 2022 - Sekarang",
             "progress": 90,
             "category": "programming"
         },
         {
-            "title": "Actix Wen",
-            "description": "Rust merupakan bahasa pemrograman yang saya pelajari sejak kuliah semester 6. Awalnya saya mempelajari pyhton untuk AI, kemudian saya mendapat informasi 'Katanya Rust Juga Bisa untuk AI loh...', sejak saat itu saya tertarik meskipun memang benar faktanya bahwa rust memang bahasa pemrograman paling ngeselin karena borrow checknya. Namun Rust tetap menjadi bahasa pemrograman favorit saya sampai sekarang dan lebih fokus untuk mengembangkan aplikasi backend dan web api untuk saat ini.",
+            "title": "Python",
+            "description": "Sebelum mengenal Rust, Python adalah bahasa pemrograman pertama yang saya pelajari. Saya kenal dengan Python bermula saat saya mengikuti program MSIB Kampus Merdeka di Orbit Future Academy dan disini juga saya pertama kali mengenal dunia IT dan Teknologi. Python pertama kali saya gunakan untuk membangun AI, ML, DL dll. Namun setelah saya bekerja saya sudah tidak pernah menggunakan python karena di tempat saya bekerja saya menggunakan bahasa pemrograman lain.",
             "url": "#",
-            "image": "/img/skills/rust.jpeg",
-            "updated_at": "Februari 2022 - Sekarang",
+            "image": "/img/skills/python.png",
+            "updated_at": "Agustus 2021 - November 2022",
+            "progress": 70,
+            "category": "programming"
+        },
+        {
+            "title": "HTML",
+            "description": "HTML pertama kali saya pelajari saat saya mengikuti program MSIB Kampus Merdeka di Orbit Future Academy, HTML saya gunakan sebagai templating untuk penerapan model AI berbasis web dengan Flask. Selain sebagai templating, HTML juga saya gunakan untuk membuat web portfolio saya sendiri sebelumnya, untuk versi 1 seperti pada url berikut.",
+            "url": "#",
+            "image": "/img/skills/html.png",
+            "updated_at": "Desember 2021 - Sekarang",
+            "progress": 100,
+            "category": "programming"
+        },
+        {
+            "title": "CSS",
+            "description": "Belajar HTML rasanya kurang kalau tidak ada CSS, karena website juga perlu tampilan yang bagus dan enak untuk dilihat, karena saya ingin menyajikan sebuah website yang orang jika berkunjung maka betah. Meskipun saya sendiri masih kurang dalam menggunakan styling dengan CSS.",
+            "url": "#",
+            "image": "/img/skills/css.png",
+            "updated_at": "Desember 2021 - Sekarang",
+            "progress": 70,
+            "category": "programming"
+        },
+        {
+            "title": "Javascript",
+            "description": "Awalnya saya tidak ingin belajar Javascript karena guru saya pernah memberikan saran untuk memilih satu bahasa pemrograman dulu untuk di dalamin, setelah bisa baru kamu bebas belajar apa saja Jadi saya memutuskan untuk mendalami dasar - dasar Rust terlebih dahulu. Namun ketika sudah dirasa cukup, saya mulai sedikit - sedikit belajar Javascript agar bisa membuat halaman website lebih interaktif dengan DOM.",
+            "url": "#",
+            "image": "/img/skills/js.png",
+            "updated_at": "Maret 2021 - Sekarang",
+            "progress": 90,
+            "category": "programming"
+        },
+        {
+            "title": "C#",
+            "description": "Pada saat liburan semester 6, saya memutuskan untuk mencari pekerjaan supaya bisa tetap melanjutkan kuliah. Akhirnya pada awal semester 7 tepatnya di bulan November 2022 saya diterima di PT S21 Micropiranti Computer. Diperusahaan saya berkenalan dengan bahasa pemrograman C#, .NET, dan .NET Core. C# digunakan untuk membuat aplikasi backend dan web api diperusahaan. Namun C# hanya saya gunakan untuk project - project di kantor saja, untuk bahasa pemrograman yang saya gunakan dan tetap dalami adalah Rust.",
+            "url": "#",
+            "image": "/img/skills/csharp.png",
+            "updated_at": "November 2022 - Sekarang",
+            "progress": 60,
+            "category": "programming"
+        },
+
+
+        {
+            "title": "Actix Web & Tokio",
+            "description": "Sebelumnya ketika saya ingin membuat web api dengan rust saya membuatnya dengan menggunakan tokio. Karena dengan tokio saya bisa membuat web api dengan asynchronous, atau multi thread. Kemudian saya mengenal actix web, dengan actix web membuat web api jadi lebih mudah karena ada fitur - fitur yang bisa saya gunakan seperti middleware, routing, error handling, dll. sehingga membuat aplikasi backend atau web api jadi lebih mudah dan cepat.",
+            "url": "#",
+            "image": "/img/skills/actix.png",
+            "updated_at": "April 2022 - Sekarang",
+            "progress": 95,
+            "category": "tech-stack"
+        },
+        {
+            "title": "Svelte / SvelteKit",
+            "description": "Selain framework untuk membuat backend application saya juga membuat membuat halaman website dengan framework frontend seperti Svelte atau SvelteKit. Alasan mengapa saya menggunakan svelte karena simpel, cepat, mudah dan bundle size yang kecil karena tidak memerlukan runtime Virtual DOM atau WebAssembly. Selain itu svelte juga menggunakan Two Way Binding sehingga tidak perlu lagi memanipulasi DOM secara manual.",
+            "url": "#",
+            "image": "/img/skills/svelte.png",
+            "updated_at": "Januari 2023 - Sekarang",
             "progress": 90,
             "category": "tech-stack"
         },
+        {
+            "title": "React / NextJS",
+            "description": "Sebelum svelte, react adalah framework frontend favorit saya sebelumnya. Awal saya menggunakan react karena ketika ingin memanipulasi state dan DOM dengan Vanila Javascript itu hal yang memerlukan efort lebih dan diwaktu itu react merupakan framework populer dimana komunitasnya sangat besar. Mau nyari apa aja pasti ada. Namun setelah muncul react V18 keatas saya mulai kurang suka dengan react karena adanya hook dan semakin banyaknya third party library membuat saya pribadi bingung. React sekarang sudah tidak sesimpel dulu lagi dan sejak itu saya mulai menggunakan svelte.", 
+            "url": "#",
+            "image": "/img/skills/react.png",
+            "updated_at": "Januari 2023 - Sekarang",
+            "progress": 90,
+            "category": "tech-stack"
+        },
+
+
         {
             "title": "PostgresSQL",
             "description": "Rust merupakan bahasa pemrograman yang saya pelajari sejak kuliah semester 6. Awalnya saya mempelajari pyhton untuk AI, kemudian saya mendapat informasi 'Katanya Rust Juga Bisa untuk AI loh...', sejak saat itu saya tertarik meskipun memang benar faktanya bahwa rust memang bahasa pemrograman paling ngeselin karena borrow checknya. Namun Rust tetap menjadi bahasa pemrograman favorit saya sampai sekarang dan lebih fokus untuk mengembangkan aplikasi backend dan web api untuk saat ini.",
