@@ -182,6 +182,15 @@
             "category": "tech-stack"
         },
         {
+            "title": "Vite",
+            "description": "Siapa yang tidak kenal dengan Vite, Vite merupakan module bundler yang cepat dan mudah digunakan. Dengan vite kita sudah di sediakan example source, kerangka kerja, configurasi js/ts, dan suport dengan framework frontend modern seperti React, Vue, Svelte, dll. Selain itu Vite juga memiliki unitesting dan hot module reloading sehingga membuat pengembangan aplikasi frontend menjadi lebih mudah.",
+            "url": "#",
+            "image": "/img/skills/vite.png",
+            "updated_at": "September 2022 - Sekarang",
+            "progress": 90,
+            "category": "tech-stack"
+        },
+        {
             "title": "Svelte / SvelteKit",
             "description": "Selain framework untuk membuat backend application saya juga membuat membuat halaman website dengan framework frontend seperti Svelte atau SvelteKit. Alasan mengapa saya menggunakan svelte karena simpel, cepat, mudah dan bundle size yang kecil karena tidak memerlukan runtime Virtual DOM atau WebAssembly. Selain itu svelte juga menggunakan Two Way Binding sehingga tidak perlu lagi memanipulasi DOM secara manual.",
             "url": "#",
@@ -191,19 +200,63 @@
             "category": "tech-stack"
         },
         {
-            "title": "React / NextJS",
-            "description": "Sebelum svelte, react adalah framework frontend favorit saya sebelumnya. Awal saya menggunakan react karena ketika ingin memanipulasi state dan DOM dengan Vanila Javascript itu hal yang memerlukan efort lebih dan diwaktu itu react merupakan framework populer dimana komunitasnya sangat besar. Mau nyari apa aja pasti ada. Namun setelah muncul react V18 keatas saya mulai kurang suka dengan react karena adanya hook dan semakin banyaknya third party library membuat saya pribadi bingung. React sekarang sudah tidak sesimpel dulu lagi dan sejak itu saya mulai menggunakan svelte.", 
+            "title": "React & NextJS",
+            "description": "Sebelum svelte, react dan next adalah framework frontend favorit saya sebelumnya. Awal saya menggunakan react karena ketika ingin memanipulasi state dan DOM dengan Vanila Javascript itu hal yang memerlukan efort lebih dan diwaktu itu react merupakan framework populer dimana komunitasnya sangat besar. Mau nyari apa aja pasti ada. Namun setelah muncul react V18 keatas saya mulai kurang suka dengan react karena adanya hook dan semakin banyaknya third party library membuat saya pribadi bingung. React sekarang sudah tidak sesimpel dulu lagi dan sejak itu saya mulai menggunakan svelte.", 
             "url": "#",
             "image": "/img/skills/react.png",
-            "updated_at": "Januari 2023 - Sekarang",
+            "updated_at": "Maret 2022 - Sekarang",
+            "progress": 90,
+            "category": "tech-stack"
+        },
+        {
+            "title": "Bootstrap",
+            "description": "Selain framework untuk interaktif frontend saya juga menggunakan bootstrap untuk membuat desain website agar lebih responsif dan mempermudah untuk memberikan style pada halaman website. Saya mulai menggunakan bootstrap ketika saya pertama kali menggunakan react. Karena dengan bootstrap saya bisa membuat suatu component dengan class dan atribut yang di berikan oleh bootatrap, sehingga saya component bisa berubah sesuai dengan tampilan yang saya inginkan.", 
+            "url": "#",
+            "image": "/img/skills/bootstrap.png",
+            "updated_at": "Maret 2022 - Sekarang",
+            "progress": 90,
+            "category": "tech-stack"
+        },
+        {
+            "title": "Sass",
+            "description": "Untuk Sass bisa di bilang saya belum lama menggunakan nya, karena menggunakan sass ketika bootatrap versi 5.3.0 rilis yaitu pada 30 Mei 2023. Waktu itu saya menggunakan bootatrap karena ada kebutuhan untuk project yang banyak di pake oleh client dan bisa berubah-ubah style nya. Jadi saya melakukan kombinasi antara Sass dengan Bootatrap untuk melakukan otomatisasi pada beberapa component sehingga tidak perlu lagi membuatnya secara manual.", 
+            "url": "#",
+            "image": "/img/skills/sass.png",
+            "updated_at": "Mei 2023 - Sekarang",
+            "progress": 90,
+            "category": "tech-stack"
+        },
+        {
+            "title": ".NET Framework & .NET Core",
+            "description": "Mencari environment untuk aplikasi berbasis windows, .NET merupakan pilihan tepat sebagai framework baik untuk web api, mvc, desktop, dll. .NET dan C# merupakan teknologi yang saya gunakan dan dikantor tempat saya bekerja. Dikantor saya menggunakan C# dan .NET Core untuk membuat aplikasi backend dan web api. Namun untuk project pribadi atau bahasa pemrograman sehari-hari diluar kantor saya tetap menggunakan Rust.", 
+            "url": "#",
+            "image": "/img/skills/sass.png",
+            "updated_at": "November 2022 - Sekarang",
+            "progress": 90,
+            "category": "tech-stack"
+        },
+        {
+            "title": "Angular JS",
+            "description": "Angular JS atau Angular versi 1 adalah framework yang digunakan oleh tim dikantor sebagai framework frontend utama. Yang biasanya di kombinasikan dengan JQuery dan Gulp sebagai module bundlernya. Angular JS telah berakhir sukungan resminya oleh tim Angular sejak Januari 2022. Oleh karena itu saya sedang bertahap untuk migrasi teknologi ke Svelte karena kebiasaan tim dengan angular js yang menggunakan two way data binding dan svelte lebih sederhana dan mudah. Selain itu dari atasan dan tim juga setup untuk menggunakan svelte.", 
+            "url": "#",
+            "image": "/img/skills/angularjs.png",
+            "updated_at": "November 2022 - Sekarang",
             "progress": 90,
             "category": "tech-stack"
         },
 
-
         {
-            "title": "PostgresSQL",
-            "description": "Rust merupakan bahasa pemrograman yang saya pelajari sejak kuliah semester 6. Awalnya saya mempelajari pyhton untuk AI, kemudian saya mendapat informasi 'Katanya Rust Juga Bisa untuk AI loh...', sejak saat itu saya tertarik meskipun memang benar faktanya bahwa rust memang bahasa pemrograman paling ngeselin karena borrow checknya. Namun Rust tetap menjadi bahasa pemrograman favorit saya sampai sekarang dan lebih fokus untuk mengembangkan aplikasi backend dan web api untuk saat ini.",
+            "title": "GIT, GitHub, Gitea",
+            "description": ".",
+            "url": "#",
+            "image": "/img/skills/rust.jpeg",
+            "updated_at": "Februari 2022 - Sekarang",
+            "progress": 90,
+            "category": "others"
+        },
+        {
+            "title": "Microsoft SQL Server",
+            "description": ".",
             "url": "#",
             "image": "/img/skills/rust.jpeg",
             "updated_at": "Februari 2022 - Sekarang",
@@ -212,7 +265,7 @@
         },
         {
             "title": "PostgresSQL",
-            "description": "Rust merupakan bahasa pemrograman yang saya pelajari sejak kuliah semester 6. Awalnya saya mempelajari pyhton untuk AI, kemudian saya mendapat informasi 'Katanya Rust Juga Bisa untuk AI loh...', sejak saat itu saya tertarik meskipun memang benar faktanya bahwa rust memang bahasa pemrograman paling ngeselin karena borrow checknya. Namun Rust tetap menjadi bahasa pemrograman favorit saya sampai sekarang dan lebih fokus untuk mengembangkan aplikasi backend dan web api untuk saat ini.",
+            "description": ".",
             "url": "#",
             "image": "/img/skills/rust.jpeg",
             "updated_at": "Februari 2022 - Sekarang",
@@ -220,8 +273,8 @@
             "category": "others"
         },
         {
-            "title": "PostgresSQL",
-            "description": "Rust merupakan bahasa pemrograman yang saya pelajari sejak kuliah semester 6. Awalnya saya mempelajari pyhton untuk AI, kemudian saya mendapat informasi 'Katanya Rust Juga Bisa untuk AI loh...', sejak saat itu saya tertarik meskipun memang benar faktanya bahwa rust memang bahasa pemrograman paling ngeselin karena borrow checknya. Namun Rust tetap menjadi bahasa pemrograman favorit saya sampai sekarang dan lebih fokus untuk mengembangkan aplikasi backend dan web api untuk saat ini.",
+            "title": "Mongo DB",
+            "description": ".",
             "url": "#",
             "image": "/img/skills/rust.jpeg",
             "updated_at": "Februari 2022 - Sekarang",
@@ -229,8 +282,8 @@
             "category": "others"
         },
         {
-            "title": "PostgresSQL",
-            "description": "Rust merupakan bahasa pemrograman yang saya pelajari sejak kuliah semester 6. Awalnya saya mempelajari pyhton untuk AI, kemudian saya mendapat informasi 'Katanya Rust Juga Bisa untuk AI loh...', sejak saat itu saya tertarik meskipun memang benar faktanya bahwa rust memang bahasa pemrograman paling ngeselin karena borrow checknya. Namun Rust tetap menjadi bahasa pemrograman favorit saya sampai sekarang dan lebih fokus untuk mengembangkan aplikasi backend dan web api untuk saat ini.",
+            "title": "SQLite",
+            "description": ".",
             "url": "#",
             "image": "/img/skills/rust.jpeg",
             "updated_at": "Februari 2022 - Sekarang",
@@ -238,8 +291,8 @@
             "category": "others"
         },
         {
-            "title": "PostgresSQL",
-            "description": "Rust merupakan bahasa pemrograman yang saya pelajari sejak kuliah semester 6. Awalnya saya mempelajari pyhton untuk AI, kemudian saya mendapat informasi 'Katanya Rust Juga Bisa untuk AI loh...', sejak saat itu saya tertarik meskipun memang benar faktanya bahwa rust memang bahasa pemrograman paling ngeselin karena borrow checknya. Namun Rust tetap menjadi bahasa pemrograman favorit saya sampai sekarang dan lebih fokus untuk mengembangkan aplikasi backend dan web api untuk saat ini.",
+            "title": "Docker",
+            "description": ".",
             "url": "#",
             "image": "/img/skills/rust.jpeg",
             "updated_at": "Februari 2022 - Sekarang",
@@ -247,8 +300,17 @@
             "category": "others"
         },
         {
-            "title": "PostgresSQL",
-            "description": "Rust merupakan bahasa pemrograman yang saya pelajari sejak kuliah semester 6. Awalnya saya mempelajari pyhton untuk AI, kemudian saya mendapat informasi 'Katanya Rust Juga Bisa untuk AI loh...', sejak saat itu saya tertarik meskipun memang benar faktanya bahwa rust memang bahasa pemrograman paling ngeselin karena borrow checknya. Namun Rust tetap menjadi bahasa pemrograman favorit saya sampai sekarang dan lebih fokus untuk mengembangkan aplikasi backend dan web api untuk saat ini.",
+            "title": "Kubernetes",
+            "description": ".",
+            "url": "#",
+            "image": "/img/skills/rust.jpeg",
+            "updated_at": "Februari 2022 - Sekarang",
+            "progress": 90,
+            "category": "others"
+        },
+        {
+            "title": "Jira",
+            "description": ".",
             "url": "#",
             "image": "/img/skills/rust.jpeg",
             "updated_at": "Februari 2022 - Sekarang",

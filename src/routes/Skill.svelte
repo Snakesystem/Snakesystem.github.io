@@ -41,6 +41,11 @@
                   </div>
                 </div>
               </div>
+              <div class="card-footer">
+                <div class="progress my-0" role="progressbar" aria-label="Example with label" aria-valuenow={skill.progress} aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: {skill.progress}%">{skill.progress}%</div>
+                </div>
+              </div>
             </div>
           {/each}
         </TabPane>
@@ -52,7 +57,7 @@
   
 <style>
   .sticky-cards-section {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
     .card {
@@ -100,6 +105,17 @@
 
     .card.linkedin-post a:hover {
         text-decoration: underline;
+    }
+
+    .card-footer {
+      padding: 0;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      height: 1em;
+    }
+    .card-footer .progress-bar{
+      height: 1em;
     }
 
   </style>
