@@ -40,7 +40,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
+  --background-color: #c3d8fc;
   --surface-color: #ffffff;
 }
 
@@ -281,7 +281,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #e9eef5;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;

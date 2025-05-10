@@ -7,7 +7,7 @@
   });
 
   async function submit() {
-    const response = await fetch("http://localhost:8000/api/v1/email/contact", {
+    const response = await fetch("https://snakesystem-web-api-tdam.shuttle.app/api/v1/email/contact", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {
@@ -40,7 +40,7 @@
             <i class="bi bi-geo-alt flex-shrink-0"></i>
             <div>
               <h3>Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Cinere, Depok, Indonesia</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -48,7 +48,7 @@
             <i class="bi bi-telephone flex-shrink-0"></i>
             <div>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <a href="https://api.whatsapp.com/send?phone=6281548266828" target="_blank" class="tel-link"><p>+62 815-4826-6828</p></a>
             </div>
           </div><!-- End Info Item -->
 
@@ -56,7 +56,7 @@
             <i class="bi bi-envelope flex-shrink-0"></i>
             <div>
               <h3>Email Us</h3>
-              <p>info@example.com</p>
+              <p>feryirawansyah09@gmail.com</p>
             </div>
           </div><!-- End Info Item -->
 

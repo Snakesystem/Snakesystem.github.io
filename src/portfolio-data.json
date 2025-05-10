@@ -143,7 +143,7 @@
             "progress": 100,
             "category": "programming"
         },
-        {
+        { 
             "title": "CSS",
             "description": "Belajar HTML rasanya kurang kalau tidak ada CSS, karena website juga perlu tampilan yang bagus dan enak untuk dilihat, karena saya ingin menyajikan sebuah website yang orang jika berkunjung maka betah. Meskipun saya sendiri masih kurang dalam menggunakan styling dengan CSS.",
             "url": "#",
@@ -165,7 +165,7 @@
             "title": "C#",
             "description": "Pada saat liburan semester 6, saya memutuskan untuk mencari pekerjaan supaya bisa tetap melanjutkan kuliah. Akhirnya pada awal semester 7 tepatnya di bulan November 2022 saya diterima di PT S21 Micropiranti Computer. Diperusahaan saya berkenalan dengan bahasa pemrograman C#, .NET, dan .NET Core. C# digunakan untuk membuat aplikasi backend dan web api diperusahaan. Namun C# hanya saya gunakan untuk project - project di kantor saja, untuk bahasa pemrograman yang saya gunakan dan tetap dalami adalah Rust.",
             "url": "#",
-            "image": "/img/skills/csharp.png",
+            "image": "/img/skills/cs.svg",
             "updated_at": "November 2022 - Sekarang",
             "progress": 60,
             "category": "programming"
@@ -180,7 +180,7 @@
             "updated_at": "April 2022 - Sekarang",
             "progress": 95,
             "category": "tech-stack"
-        },
+        }, 
         {
             "title": "Vite",
             "description": "Siapa yang tidak kenal dengan Vite, Vite merupakan module bundler yang cepat dan mudah digunakan. Dengan vite kita sudah di sediakan example source, kerangka kerja, configurasi js/ts, dan suport dengan framework frontend modern seperti React, Vue, Svelte, dll. Selain itu Vite juga memiliki unitesting dan hot module reloading sehingga membuat pengembangan aplikasi frontend menjadi lebih mudah.",
@@ -214,7 +214,7 @@
             "url": "#",
             "image": "/img/skills/bootstrap.png",
             "updated_at": "Maret 2022 - Sekarang",
-            "progress": 90,
+            "progress": 100,
             "category": "tech-stack"
         },
         {
@@ -223,16 +223,16 @@
             "url": "#",
             "image": "/img/skills/sass.png",
             "updated_at": "Mei 2023 - Sekarang",
-            "progress": 90,
+            "progress": 80,
             "category": "tech-stack"
         },
         {
             "title": ".NET Framework & .NET Core",
             "description": "Mencari environment untuk aplikasi berbasis windows, .NET merupakan pilihan tepat sebagai framework baik untuk web api, mvc, desktop, dll. .NET dan C# merupakan teknologi yang saya gunakan dan dikantor tempat saya bekerja. Dikantor saya menggunakan C# dan .NET Core untuk membuat aplikasi backend dan web api. Namun untuk project pribadi atau bahasa pemrograman sehari-hari diluar kantor saya tetap menggunakan Rust.", 
             "url": "#",
-            "image": "/img/skills/sass.png",
+            "image": "/img/skills/dotnet.png",
             "updated_at": "November 2022 - Sekarang",
-            "progress": 90,
+            "progress": 75,
             "category": "tech-stack"
         },
         {
@@ -241,80 +241,80 @@
             "url": "#",
             "image": "/img/skills/angularjs.png",
             "updated_at": "November 2022 - Sekarang",
-            "progress": 90,
+            "progress": 60,
             "category": "tech-stack"
         },
 
         {
             "title": "GIT, GitHub, Gitea",
-            "description": ".",
+            "description": "Bagi semua programmer, CI/CD merupakan sebuah tools untuk mengintegrasikan suatu perangkat lunak, code atau project agar dalam siklus pengembangan bisa dimaintain dengan baik. Ketika saya memulai bertpetualang didunia teknologi saya mulai menggunakan git sebagai media sosial utama seorang programmer. DImana saya bisa menyimpan dan mempublish apa yang pernah saya buat di internet. Selain itu saya juga mempelajari dan menerapkan Gitea di dalam perusahaan saya bekerja. Karena agar code project dapat dimanaged dengan baik dan efisien.",
             "url": "#",
-            "image": "/img/skills/rust.jpeg",
+            "image": "/img/skills/git.png",
             "updated_at": "Februari 2022 - Sekarang",
-            "progress": 90,
+            "progress": 100,
+            "category": "others"
+        },
+        {
+            "title": "Swagger & OpenAPI",
+            "description": "Seorang programmer lebih tepatnya seorang backend atau fullstack tentunya wajib membuat dokumentasi dari api yang telah dibuat. Selain itu dokumentasi ini juga sangat membantu dalam mempermudah dalam mempelajari integrasi ke beberapa aplikasi lain dengan menerapkan api specification yang telah dibuat. Sehingga jika bekerja secara tim dengan frontend, mobile, dektop dan aplikasi backend lainnya akan lebih mudah dan terstruktur. Selain itu api specification juga membantu saya pribadi dalam mengingat fitur dan fungsi pada aplikasi yang saya buat.",
+            "url": "#",
+            "image": "/img/skills/swagger.png",
+            "updated_at": "Februari 2022 - Sekarang",
+            "progress": 95,
+            "category": "others"
+        },
+        {
+            "title": "PostgreSQL",
+            "description": "Membuat aplikasi backend atau api tentu tidak ketinggalan yang namanya database. PostgreSQL merupakan salah satu database favorit saya karena memiliki fitur-fitur yang sangat lengkap dan tentunya gratis. PostgreSQL adalah database yang pertamakali saya pelajari dan saya gunakan untuk membuat project pribadi. Fitur yang saya sukai dan paling sering saya gunakan di PostgreSQl adalah function dan Stored Procedure, karena dengan fitur ini penulisan code tidak terlalu panjang dan rapi selain itu logic bisnis juga ada didalam database.",
+            "url": "#",
+            "image": "/img/skills/postgresql.png",
+            "updated_at": "Februari 2022 - Sekarang",
+            "progress": 80,
             "category": "others"
         },
         {
             "title": "Microsoft SQL Server",
-            "description": ".",
+            "description": "Selain PostgreSQL dikantor dan project pribadi saya juga menggunakan Microsoft SQL Server. SQL Server pertamakali saya pelajari ketika saya masuk ke perusahaan saya bekerja fitur dari SQL server juga tidak kalah banyak seperti PostgreSQL. Namun untuk mengakses semua fitur dari SQL Server secara native hanya bisa mengguakan C# dan .NET atau .NET Core seperti Trigger, Migration, Tracking, SMO, Dependency Injection dll, ORM dengan Entity Framework dan Notification. Namun untuk function dan stored procedure masih bisa digunakan dengan bahasa pemrograman lain seperti Rust yang saya gunakan.",
             "url": "#",
-            "image": "/img/skills/rust.jpeg",
-            "updated_at": "Februari 2022 - Sekarang",
-            "progress": 90,
-            "category": "others"
-        },
-        {
-            "title": "PostgresSQL",
-            "description": ".",
-            "url": "#",
-            "image": "/img/skills/rust.jpeg",
+            "image": "/img/skills/mssql.png",
             "updated_at": "Februari 2022 - Sekarang",
             "progress": 90,
             "category": "others"
         },
         {
             "title": "Mongo DB",
-            "description": ".",
+            "description": "Database lain yang saya gunakan adalah MongoDB. Mongodb merupakan database non-relational yang sangat populer digunakan oleh banyak developer. Fitur yang paling saya sukai pada mongodb adalah Full Text Search, Aggregation, dan Replication. fitur ini sangat membantu dalam meningkatkan performance aplikasi dalam pencarian data atau get data. Meskipun pada database lain seperti PostgreSQL dan Microsoft SQL Server juga terdapat fitur ini tetapi pada MongoDB memiliki performa yang lebih baik dan lebih cepat karena berbasis database object.",
             "url": "#",
-            "image": "/img/skills/rust.jpeg",
+            "image": "/img/skills/mongodb.png",
             "updated_at": "Februari 2022 - Sekarang",
-            "progress": 90,
+            "progress": 70,
             "category": "others"
         },
         {
-            "title": "SQLite",
-            "description": ".",
+            "title": "Redis",
+            "description": "Database lain yang saya gunakan adalah Redis. seperti yang kita tahu Redis digunakan untuk menyimpan data status sebagai cache diserver seperti data session atau data-data lain yang sering diakses oleh user. Karena redis berbasi key value dan disimpan di memory sehingga sangat cepat dan efisien. Namun saya belum lama menggunakan redis dan masih mempelajari fitur-fitur yang ada di redis. Bisasanya saya hanya menggunakannya untuk pengelolaan session saja.",
             "url": "#",
-            "image": "/img/skills/rust.jpeg",
+            "image": "/img/skills/redis.png",
             "updated_at": "Februari 2022 - Sekarang",
-            "progress": 90,
+            "progress": 50,
             "category": "others"
         },
         {
             "title": "Docker",
-            "description": ".",
+            "description": "Docker adalah platform yang digunakan untuk mempermudah proses pengembangan, penyebaran, dan menjalankan aplikasi di dalam kontainer. Artinya docker memungkinkan suatu aplikasi jalan di dalam container atau wadah dan resource memory yang di isolasi dari aplikasi lain. Sehingga hal ini akan memudahkan proses pengembangan dan penyebaran aplikasi serta sangat membantu untuk mmemanajemen aplikasi supaya semua aplikasi bisa berjalan dengan baik di sebuah lingkungan tertentu.",
             "url": "#",
-            "image": "/img/skills/rust.jpeg",
+            "image": "/img/skills/docker.png",
             "updated_at": "Februari 2022 - Sekarang",
-            "progress": 90,
+            "progress": 50,
             "category": "others"
         },
         {
             "title": "Kubernetes",
-            "description": ".",
+            "description": "Selain docker kontainer tentunya kuranng lengkap jika tidak menggunakan Kubernetes.Kubernetes adalah sistem open source yang digunakan untuk mengotomatiskan penerapan, penskalaan, dan pengelolaan aplikasi dalam kontainer. Dengan kubernetes kita dapat mengelola banyak kontainer secara otomatis, sehingga kita bisa mengelola aplikasi dengan lebih mudah dan cepat. Selain itu fitur yang pling saya suka adalah auto scale atau jika suatu saat trafiknya meningkat maka secara otomatis akan menambahkan node baru untuk menangani traffic tersebut.",
             "url": "#",
-            "image": "/img/skills/rust.jpeg",
+            "image": "/img/skills/kubernetes.png",
             "updated_at": "Februari 2022 - Sekarang",
-            "progress": 90,
-            "category": "others"
-        },
-        {
-            "title": "Jira",
-            "description": ".",
-            "url": "#",
-            "image": "/img/skills/rust.jpeg",
-            "updated_at": "Februari 2022 - Sekarang",
-            "progress": 90,
+            "progress": 40,
             "category": "others"
         }
     ]
