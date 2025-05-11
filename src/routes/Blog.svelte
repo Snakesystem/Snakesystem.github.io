@@ -10,8 +10,8 @@
 
 <section id="blog" class="blog section">
     <div class="container section-title" data-aos="fade-up">
-      <h2>blog</h2>
-      <p>Deskripsi blog di sini...</p>
+      <h2>Catatan</h2>
+      <p>Terkadang di waktu luang atau gabut saya, saya membuat catatan mengenai teknologi yang saya pelajari. Tujuannya adalah sebagai dokumentasi tentang apa yang saya pelajari dan bagaimana saya memahami teknologi tersebut. Serta sebagai pengingat di masa yang akan datang.</p>
     </div>
     <div class="container">
         <div class="sticky-cards-section" data-aos="fade-up" data-aos-delay="100">
@@ -82,5 +82,28 @@
         text-decoration: underline;
     }
 
+    @media screen and (max-width: 768px) {
+
+      #blog .section-title {
+        margin-bottom: -3rem;
+      }
+
+      #blog .section-title h2 {
+        font-size: 1.6rem;
+      }
+
+      #blog .section-title p {
+        font-size: 0.9rem;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .card-body p {
+        font-size: 0.9rem;
+        text-align: justify;
+      }
+    }
   </style>
   

@@ -27,14 +27,14 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>About</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <p>Saya adalah seorang Software Engineer yang berdedikasi dalam membangun solusi digital yang efisien, scalable, dan user-friendly. Dengan latar belakang kuat di bidang pengembangan web, saya terbiasa bekerja dengan berbagai teknologi modern seperti JavaScript/TypeScript, Svelte, Rust, dan berbagai framework lainnya.</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
       <div class="row gy-4 justify-content-center">
         <div class="col-lg-4 d-flex about-img">
-          <img src="/img/profile-img.jpg" class="img-fluid" alt="">
+          <img src="/img/profile.jpg" class="img-fluid" alt="Profile Tidak ada">
           <div class="badge-container">
             <Badge text={experience} />
           </div>
@@ -70,13 +70,24 @@
 
   </section>
 
-  <style>
-    .badge-container {
-      position: absolute;
-      bottom: -20%;
-      right: -20%;
+<style scoped>
+  .badge-container {
+    position: absolute;
+    bottom: -20%;
+    right: -20%;
+  }
+  .about-img {
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    #about .section-title h2 {
+      font-size: 1.6rem;
     }
-    .about-img {
-      position: relative;
+
+    #about .section-title p {
+      font-size: 0.8rem;
     }
-  </style>
+  }
+
+</style>

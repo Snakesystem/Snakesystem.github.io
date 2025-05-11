@@ -3,7 +3,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Services</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <p>.</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -21,7 +21,7 @@
             <a href="/" class="stretched-link">
               <h3>Backend Development</h3>
             </a>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            <p>Saya membangun sistem backend yang cepat, aman, dan scalable menggunakan teknologi seperti Rust (Actix/Axum), NodeJS/Bun (Express/Hono) dan C# (.NET/.NET Core). Fokus saya pada efisiensi API, struktur code yang bersih, dan integrasi database yang solid serta dokumentasi yang baik.</p>
           </div>
         </div><!-- End Service Item -->
 
@@ -36,7 +36,7 @@
             <a href="/" class="stretched-link">
               <h3>Frontend Web Development</h3>
             </a>
-            <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            <p>Membuat antarmuka pengguna yang menarik dan responsif menggunakan Svelte dan React. Saya mengutamakan pengalaman pengguna (UX) dan desain yang konsisten, dengan bantuan CSS framework seperti Bootstrap atau CSS preprocessor seperti Sass.</p>
           </div>
         </div><!-- End Service Item -->
 
@@ -51,7 +51,7 @@
             <a href="/" class="stretched-link">
               <h3>Seo Optimization</h3>
             </a>
-            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            <p>Saya membantu meningkatkan visibilitas situs web Anda di mesin pencari melalui pengoptimalan struktur HTML, kecepatan situs, penggunaan metadata yang tepat, dan strategi konten yang efektif agar muncul di halaman pertama mesin pencari.</p>
           </div>
         </div><!-- End Service Item -->
 
@@ -66,7 +66,7 @@
             <a href="/" class="stretched-link">
               <h3>Database Management</h3>
             </a>
-            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+            <p>Pengalaman dalam merancang, mengelola, dan mengoptimalkan database relasional (PostgreSQL, SQL Server) maupun non-relasional (MongoDB). Saya memastikan integritas data dan performa query yang optimal.</p>
             <a href="/" class="stretched-link" aria-hidden="true"></a>
           </div>
         </div><!-- End Service Item -->
@@ -82,7 +82,7 @@
             <a href="/" class="stretched-link">
               <h3>Mentoring</h3>
             </a>
-            <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+            <p>Tidak hanya membangun atau mengembangkan aplikasi, saya juga menyediakan sesi mentoring untuk individu atau tim yang ingin belajar lebih dalam tentang pemrograman, arsitektur perangkat lunak, hingga praktik terbaik dalam pengembangan sistem.</p>
             <a href="/" class="stretched-link" aria-hidden="true"></a>
           </div>
         </div><!-- End Service Item -->
@@ -98,7 +98,7 @@
             <a href="/" class="stretched-link">
               <h3>Software Architecture</h3>
             </a>
-            <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+            <p>Saya merancang arsitektur perangkat lunak yang modular dan maintainable, menggunakan pendekatan seperti DDD, service-oriented architecture, dan clean code principles. Tujuannya: memastikan proyek scalable dan mudah dikembangkan dalam jangka panjang.</p>
             <a href="/" class="stretched-link" aria-hidden="true"></a>
           </div>
         </div><!-- End Service Item -->
@@ -108,3 +108,20 @@
     </div>
 
   </section>
+
+<style scoped>
+   @media screen and (max-width: 768px) {
+
+    #services .section-title {
+      margin-bottom: -2rem;
+    }
+
+    #services .section-title h2 {
+      font-size: 1.6rem;
+    }
+
+    #services .section-title p {
+      font-size: 0.9rem;
+    }
+  }
+</style>

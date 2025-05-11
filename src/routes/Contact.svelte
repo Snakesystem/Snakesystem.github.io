@@ -28,7 +28,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Contact</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <p>Ingin bertanya lebih lanjut? Silahkan hubungi saya melalui kontak di bawah ini</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade" data-aos-delay="100">
@@ -102,3 +102,19 @@
     </div>
 
   </section>
+
+<style scoped>
+  @media screen and (max-width: 768px) {
+    #contact .section-title {
+      margin-bottom: -3rem;
+    }
+
+    #contact .section-title h2 {
+      font-size: 1.6rem;
+    }
+
+    #contact .section-title p {
+      font-size: 0.9rem;
+    }
+  }
+</style>

@@ -5,6 +5,12 @@
 
   const categories = ['programming', 'tech-stack', 'others'];
 
+  let details = $state(false);
+
+  function openDetail(data) {
+    details = data;
+  }
+
   onMount(() => {
     // inisialisasi jika perlu
   });
@@ -13,7 +19,7 @@
 <section id="skills" class="skills section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Skills</h2>
-    <p>Deskripsi skills di sini...</p>
+    <p>Perjalanan saya di dunia teknologi dimulai dari rasa penasaran terhadap bagaimana sebuah aplikasi bekerja. Dari situ, saya mulai belajar sendiri, membangun proyek kecil, dan terus berkembang hingga menjadi seorang Software Engineer yang terbiasa bekerja dari sisi frontend hingga backend.</p>
   </div>
 
   <div class="container">
@@ -28,11 +34,12 @@
                   <div class="col-md-10">
                     <h5 class="card-title text-danger">
                       {skill.title}
-                      <span class="card-text ms-3"><small class="text-muted">({skill.updated_at})</small></span>
                     </h5>
-                    <p class="card-text text-muted" style="font-style: italic;">
+                    <span class="card-text updated_at"><small class="text-muted">({skill.updated_at})</small></span>
+                    <p class="card-text text-muted {window.innerWidth < 768 && !details ? 'text-truncate' : ''}" style="font-style: italic;">
                       <small>{skill.description}</small>
-                    </p>
+                    <!-- svelte-ignore a11y_click_events_have_key_events -->
+                    </p><button onclick={() => openDetail(!details)} class="{window.innerWidth < 768 ? 'position-absolute text-primary btn p-0' : 'd-none'}" style="font-size: 0.8rem; margin-top: -1.2rem; cursor: pointer;">{details ? 'Lebih sedikit' : 'Selengkapnya'}</button>
                     <a href={skill.url} target="_blank" class="text-decoration-none" style="font-style: italic;">Read More</a>
                     <div class="card-text"><small class="text-muted">Skill Level: <strong>{skill.progress}</strong>%</small></div>
                   </div>
@@ -55,7 +62,7 @@
   </div>
 </section>
   
-<style>
+<style scoped>
   .sticky-cards-section {
     width: 100%;
     margin: auto;
@@ -94,7 +101,6 @@
         border-right: 4px solid #0077b5;
         border-top: 1px solid #0077b5;
         background-color: #f9fcff;
-        /* font-style: italic; */
     }
 
     .card.linkedin-post a {
@@ -118,5 +124,42 @@
       height: 1em;
     }
 
-  </style>
+    @media screen and (max-width: 768px) {
+
+      #skills .section-title {
+        margin-bottom: -2rem;
+      }
+
+      #skills .section-title h2 {
+        font-size: 1.6rem;
+      }
+
+      #skills .section-title p {
+        font-size: 0.9rem;
+      }
+      
+      .card-body p {
+        font-size: 0.9rem;
+        text-align: justify;
+        /* text-overflow: ellipsis; */
+      }
+      .card-body img {
+        width: 15%;
+        position: absolute;
+        right: 2rem;
+        margin-top: -3rem;
+      }
+
+      .updated_at{
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      .card-title{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+
+</style>
   

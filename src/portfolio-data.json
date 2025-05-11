@@ -67,49 +67,49 @@
     "blogs": [
         {
             "title": "Actix Web x Microsoft SQL Server 🚀",
-            "description": "Katalog produk dengan desain responsif dan animasi interaktif.",
+            "description": "Integrasi Actix Web dengan Microsoft SQL Server memerlukan asynchronous dengan tokio.",
             "url": "#",
             "image": "/img/blog/actix-web-mssql.png",
             "updated_at": "2023-02-22T10:00:00+07:00"
         },
         {
             "title": "CRUD Actix Web x Svelte",
-            "description": "Katalog produk dengan desain responsif dan animasi interaktif.",
+            "description": "Untuk membuat Create, Read, Update dan Delete (CRUD) menggunakan Actix Web dan Svelte.",
             "url": "#",
             "image": "/img/blog/crud-actix-web-svelte.png",
             "updated_at": "2023-02-22T10:00:00+07:00"
         },
         {
             "title": "Type Data in Rust 🦀",
-            "description": "Katalog produk dengan desain responsif dan animasi interaktif.",
+            "description": "Pembagian kategori type data di Rust adalah sebagai berikut.",
             "url": "#",
             "image": "/img/blog/type-data-rust.png",
             "updated_at": "2023-02-22T10:00:00+07:00"
         },
         {
             "title": "CRUD using Stored Procedure with Actix Web x Microsoft SQL Server",
-            "description": "Katalog produk dengan desain responsif dan animasi interaktif.",
+            "description": "Dengan Stored Procedure kita bisa membuat Create, Read, Update dan Delete (CRUD) lebih clean.",
             "url": "#",
             "image": "/img/blog/crud-actix-web-mssql.png",
             "updated_at": "2023-02-22T10:00:00+07:00"
         },
         {
             "title": "Actix Web + JWT Authentication 🔏",
-            "description": "Katalog produk dengan desain responsif dan animasi interaktif.",
+            "description": "Token biasanya akan disimpan di cookie atau local storage pada browser.",
             "url": "#",
             "image": "/img/blog/actix-web-jwt.png",
             "updated_at": "2023-02-22T10:00:00+07:00"
         },
         {
             "title": "Actix Web + Swagger OpenAPI Specification 📚",
-            "description": "Katalog produk dengan desain responsif dan animasi interaktif.",
+            "description": "Dokumentasi yang baik sangat membantu dalam mempermudah dalam mempelajari integrasi ke beberapa aplikasi lain.",
             "url": "#",
             "image": "/img/blog/actix-web-swagger.png",
             "updated_at": "2023-02-22T10:00:00+07:00"
         },
         {
             "title": "Bye bye React 👋, Hello Svelte",
-            "description": "Katalog produk dengan desain responsif dan animasi interaktif.",
+            "description": "Dari React ke Svelte adalah sebuah perubahan yang cukup signifikan.",
             "url": "#",
             "image": "/img/blog/actix-web-swagger.png",
             "updated_at": "2023-02-22T10:00:00+07:00"
@@ -317,5 +317,40 @@
             "progress": 40,
             "category": "others"
         }
+    ],
+    "testimonials": [
+        {
+            "name": "Budi",
+            "image": "/img/testimonials/1.jpg",
+            "position": "Designer",
+            "company": "PT. Budi",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+            "star": 5
+        },
+        {
+            "name": "Joko",
+            "image": "/img/testimonials/2.jpg",
+            "position": "CEO & Founder",
+            "company": "PT. Joko",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+            "star": 5
+        },
+        {
+            "name": "Elie",
+            "image": "/img/testimonials/3.jpg",
+            "position": "Enterpreneur",
+            "company": "PT. Elie",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+            "star": 5
+        },
+        {
+            "name": "Sukron",
+            "image": "/img/testimonials/4.jpg",
+            "position": "CEO & Founder",
+            "company": "PT. Sukron",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+            "star": 4
+        }
     ]
+
 }

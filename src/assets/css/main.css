@@ -1454,7 +1454,23 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+
+.tab-content .nav-link {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+h5.card-title {
+  color: #0077b5 !important;
+}
+
 @media screen and (min-width: 768px) {
+
+  .mobile-title {
+    font-size: 1.5rem;
+  }
+
   .tab-content {
     display: flex;
     border-radius: 10px;

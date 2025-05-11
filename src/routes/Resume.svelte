@@ -67,3 +67,24 @@
       </div>
     </div>
   </section>
+
+<style scoped>
+  @media screen and (max-width: 768px) {
+
+    #resume p, li {
+      font-size: 0.9rem;
+    }
+
+    #resume .section-title {
+      margin-bottom: -2rem;
+    }
+
+    #resume .section-title h2 {
+      font-size: 1.6rem;
+    }
+
+    #resume .section-title p {
+      font-size: 0.9rem;
+    }
+  }
+</style>

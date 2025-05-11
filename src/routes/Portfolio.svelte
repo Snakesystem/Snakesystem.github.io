@@ -47,7 +47,7 @@
 <section id="portfolio" class="portfolio section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Portfolio</h2>
-    <p>Deskripsi portfolio di sini...</p>
+    <p>Perjalanan saya di dunia teknologi tentunya menemukan banyak referensi dan case yang membantu saya untuk semakin mengembangkan keahlian saya di bidang teknologi.</p>
   </div>
 
   <div class="container">
@@ -99,5 +99,20 @@
     max-height: 500px;
     overflow-y: scroll;
     /* background-color: salmon; */
+  }
+
+  @media screen and (max-width: 768px) {
+
+    #portfolio .section-title {
+      margin-bottom: -2rem;
+    }
+
+    #portfolio .section-title h2 {
+      font-size: 1.6rem;
+    }
+
+    #portfolio .section-title p {
+      font-size: 0.9rem;
+    }
   }
 </style>
