@@ -5,6 +5,9 @@
 
   function navmenuScrollspy() {
     const navmenulinks = document.querySelectorAll('.navmenu a');
+    
+    const header = document.querySelector('#header');
+
     navmenulinks.forEach(navmenulink => {
       // @ts-ignore
       if (!navmenulink.hash) return;
@@ -18,7 +21,18 @@
         position <= (section.offsetTop + section.offsetHeight)
       ) {
         document.querySelectorAll('.navmenu a.active')
-          .forEach(link => link.classList.remove('active'));
+          .forEach(link => {
+
+            const active_link = link.getAttribute('href');
+
+            if(active_link === "#hero" && window.innerWidth > 768) {
+              header.classList.add('d-none');
+            } else {
+              header.classList.remove('d-none');
+            }
+
+            return link.classList.remove('active')
+          });
         navmenulink.classList.add('active');
       } else {
         navmenulink.classList.remove('active');
@@ -27,6 +41,7 @@
   }
 
   onMount(() => {
+    
     navmenuScrollspy(); // run once on mount
     window.addEventListener('load', navmenuScrollspy);
     document.addEventListener('scroll', navmenuScrollspy);
