@@ -1,20 +1,19 @@
 <script>
     const { data } = $props();
-
-    console.log(data)
+    
 </script>
 
 <div class="container-fluid">
     <div class="row">
         <h1>{data.title}</h1>
         <div class="col-lg-6">
-            <img src={data.image} alt={data.title} class="img-fluid"/>
+            <img src={data.image !== '' ? data.image : '/img/portfolio/onprogress.png'} alt={data.title} class="img-fluid"/>
             <p>{data.description}</p>
         </div>
         <div class="col-lg-6">
             <h2>Technologies</h2>
             <p>Aplikasi ini dibuat dengan menggunakan teknologi sebagai berikut</p>
-            <a class="btn btn-primary btn-sm" href={data.link} target="_blank">View live Application</a>
+            <a class="btn btn-primary btn-sm {data.link === "" ? "disabled btn-danger" : ""}" href={data.link !== "" ? data.link : null} target="_blank">{data.link !== "" ? "View Live Aplication" : "Application is private"}</a>
             <ul class="list-group">
                 {#each data.techs as tech }
                     <li class="list-group-item">
@@ -28,7 +27,7 @@
 </div>
 
 <style>
-    h1, p, span, small, strong, a, ul, li {
+    h1, p, span, a, ul, li {
         color: var(--default-color);
     }
 

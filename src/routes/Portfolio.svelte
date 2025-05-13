@@ -70,7 +70,7 @@
             openModal('portfolio-detail');
             detailData = item
           }} class={`col-lg-4 col-md-6 portfolio-item isotope-item filter-${item.category}`}>
-            <img src={item.image} class="img-fluid" alt={item.title}/>
+            <img src={item.image !== '' ? item.image : '/img/portfolio/onprogress.png'} class="img-fluid" alt={item.title}/>
             <div class="portfolio-info">
               <h4>{item.title}</h4>
               <p>{item.description}</p>

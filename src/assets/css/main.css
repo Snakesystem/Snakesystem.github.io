@@ -412,7 +412,7 @@ h6 {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 4rem;
 }
 
 /*--------------------------------------------------------------
@@ -471,6 +471,13 @@ section,
   background-color: var(--background-color);
   padding: 60px 0;
   overflow: clip;
+}
+
+@media screen and (min-width: 768px) {
+  section,
+  .section {
+    padding: 60px 3rem 60px 0;
+  }
 }
 
 /*--------------------------------------------------------------

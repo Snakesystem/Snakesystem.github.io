@@ -17,7 +17,13 @@
 
   onMount(() => {
     const savedTheme = localStorage.getItem('theme');
-    isDark = savedTheme === 'dark';
+
+    if (savedTheme === null) {
+      localStorage.setItem('theme', 'dark');
+      isDark = true;
+    } else {
+      isDark = savedTheme === 'dark';
+    }
     updateBodyClass();
   });
 
@@ -59,7 +65,7 @@
 <style>
   .settings {
     position: fixed;
-    bottom: 4rem;
+    bottom: 1rem;
     right: 1rem;
     z-index: 9999;
     border: none;

@@ -3,7 +3,7 @@
         {
           "title": "Snakesystem Web API",
           "category": "web-api",
-          "image": "/img/portfolio/snakesystem-web-api.jpeg",
+          "image": "/img/portfolio/snakesystem-web-api.png",
           "gallery": "portfolio-gallery-web-api",
           "description": "RESTful API untuk sistem internal Snake System atau saya pribadi yang scalable dan secure. Dilengkapi dengan fitur authentikasi JWT. dan dokumentasi OpenAPI. Web API ini khusus saya buat sebagai backend dari aplikasi Web Portfolio saya dan beberapa aplikasi lainnya.",
           "link": "https://snakesystem-web-api-tdam.shuttle.app/docs",
@@ -96,6 +96,41 @@
           ]        
         },
         {
+          "title": "UBS Trade Dashboard Web API",
+          "category": "web-api",
+          "image": "/img/portfolio/ubs-trade-api.png",
+          "gallery": "portfolio-gallery-web-api",
+          "description": "RESTful API untuk sistem internal UBS Trade Dashboard. Dilengkapi dengan fitur authentikasi JWT, export dan import file. dan dokumentasi OpenAPI. Web API ini khusus saya buat sebagai backend dari aplikasi UBS Trade Dashboard.",
+          "link": "",
+          "techs": [
+            {
+              "name": "Rust",
+              "link": "https://www.rust-lang.org/",
+              "img": "/img/skills/rust.png"
+            },
+            {
+              "name": "Actix Web",
+              "link": "https://actix.rs/",
+              "img": "/img/skills/actix.png"
+            },
+            {
+              "name": "Microsoft SQL Server",
+              "link": "https://www-microsoft-com.translate.goog/en-us/sql-server/sql-server-downloads?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc",
+              "img": "/img/skills/mssql.png"
+            },
+            {
+              "name": "Json Web Token",
+              "link": "https://jwt.io", 
+              "img": "/img/skills/jwt.svg"
+            },
+            {
+              "name": "OpenAPI Specification",
+              "link": "https://www.openapis.org",
+              "img": "/img/skills/swagger.png"
+            }
+          ]
+        },
+        {
           "title": "UBS Trade Dashboard",
           "category": "frontend",
           "image": "/img/portfolio/ubs-trade.jpeg",
@@ -141,10 +176,56 @@
           ]     
         },
         {
+          "title": "Snakesystem Library",
+          "category": "frontend",
+          "image": "",
+          "gallery": "portfolio-gallery-frontend",
+          "description": "Aplikasi perpustakaan snakesystem",
+          "link": "",
+          "techs": [
+            {
+              "name": "Javascript",
+              "link": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Adding_interactivity",
+              "img": "/img/skills/js.png"
+            },
+            {
+              "name": "Vite",
+              "link": "https://vite.dev",
+              "img": "/img/skills/vite.png"
+            },
+            {
+              "name": "Svelte",
+              "link": "https://svelte.dev",
+              "img": "/img/skills/svelte.png"
+            },
+            {
+              "name": "Bootstrap",
+              "link": "https://getbootstrap.com",
+              "img": "/img/skills/bootstrap.png"
+            },
+            {
+              "name": "Sass",
+              "link": "https://sass-lang.com", 
+              "img": "/img/skills/sass.png"
+            },
+            {
+              "name": "Sveltestrap",
+              "link": "https://sveltestrap.js.org",
+              "img": "/img/skills/sveltestrap.png"
+            },
+            {
+              "name": "Lottie Files",
+              "link": "https://lottiefiles.com",
+              "img": "/img/skills/lottiefiles.png"
+            }
+          ]        
+        },
+        {
           "title": "S21 + Web Back Office",
           "category": "frontend",
           "image": "/img/portfolio/web-bo.jpeg",
           "gallery": "portfolio-gallery-frontend",
+          "link": "https://s21web.micropiranti.id",
           "description": "Katalog produk dengan desain responsif dan animasi interaktif."
         },
         {
@@ -159,6 +240,7 @@
           "category": "frontend",
           "image": "/img/portfolio/sadana.jpeg",
           "gallery": "portfolio-gallery-frontend",
+          "link": "https://sadana-bill-app.web.app",
           "description": "Katalog produk dengan desain responsif dan animasi interaktif."
         },
         {
@@ -173,6 +255,7 @@
           "category": "others", 
           "image": "/img/portfolio/pilarmas.jpeg",
           "gallery": "portfolio-gallery-others",
+          "link": "https://eform.pilarmas-investindo.co.id",
           "description": "Proyek branding digital untuk startup teknologi kreatif."
         },
         {
@@ -180,6 +263,7 @@
           "category": "others", 
           "image": "/img/portfolio/utrade.jpeg",
           "gallery": "portfolio-gallery-others",
+          "link": "https://www.utrade.co.id/",
           "description": "Proyek branding digital untuk startup teknologi kreatif."
         }
       ],
