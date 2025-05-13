@@ -4,6 +4,7 @@
   import { Autoplay } from "swiper/modules";
   import { Pagination } from "swiper/modules";
   import { testimonials } from '../portfolio-data.json';
+  import { t } from "../lang";
 
   onMount(() => {
     new Swiper(".swiper", {
@@ -26,10 +27,8 @@
 <section id="testimonials" class="testimonials section">
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Testimonials</h2>
-    <p>
-      Terimakasih atas feedback yang telah memberikan kepercayaan kepada saya. Saya sangat senang dapat bekerja sama dengan tim yang berdedikasi dalam membuat solusi digital yang efisien, scalable, dan user-friendly.
-    </p>
+    <h2>{$t('testimoni_title')}</h2>
+    <p>{$t('testimoni_desc')}</p>
   </div>
   <!-- End Section Title -->
 

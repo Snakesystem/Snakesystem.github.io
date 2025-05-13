@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import skillsData from '../portfolio-data.json';
   import { TabContent, TabPane } from '@sveltestrap/sveltestrap';
+  import { t } from '../lang';
 
   const categories = ['programming', 'tech-stack', 'others'];
 
@@ -18,8 +19,8 @@
 
 <section id="skills" class="skills section">
   <div class="container section-title" data-aos="fade-up">
-    <h2>Skills</h2>
-    <p>Perjalanan saya di dunia teknologi dimulai dari rasa penasaran terhadap bagaimana sebuah aplikasi bekerja. Dari situ, saya mulai belajar sendiri, membangun proyek kecil, dan terus berkembang hingga menjadi seorang Software Engineer yang terbiasa bekerja dari sisi frontend hingga backend.</p>
+    <h2>{$t('skill_title')}</h2>
+    <p>{$t('skill_desc')}</p>
   </div>
 
   <div class="container">
@@ -33,15 +34,31 @@
                 <div class="row justify-content-between">
                   <div class="col-md-10">
                     <h5 class="card-title text-danger">
-                      {skill.title}
+                      {skill.title} {#if window.innerWidth > 768}
+                        <span class="fw-bold text-warning ms-3" style="font-size: 1rem;">Started - </span> <u class="card-text updated_at ms-1"  style="font-size: 1rem;"><small class="text-muted">{skill.updated_at}</small></u>
+                      {/if}
                     </h5>
-                    <span class="card-text updated_at"><small class="text-muted">({skill.updated_at})</small></span>
+                    {#if window.innerWidth < 768}
+                      <span class="tfw-bold text-warning">Started - </span> <u class="card-text updated_at"><small class="text-muted">{skill.updated_at}</small></u>
+                    {/if}
                     <p class="card-text text-muted {window.innerWidth < 768 && !details ? 'text-truncate' : ''}" style="font-style: italic;">
-                      <small>{skill.description}</small>
-                    <!-- svelte-ignore a11y_click_events_have_key_events -->
-                    </p><button onclick={() => openDetail(!details)} class="{window.innerWidth < 768 ? 'position-absolute text-primary btn p-0' : 'd-none'}" style="font-size: 0.8rem; margin-top: -1.2rem; cursor: pointer;">{details ? 'Lebih sedikit' : 'Selengkapnya'}</button>
-                    <a href={skill.url} target="_blank" class="text-decoration-none" style="font-style: italic;">Read More</a>
-                    <div class="card-text"><small class="text-muted">Skill Level: <strong>{skill.progress}</strong>%</small></div>
+                      <small>{$t(skill.description)}</small>                    
+                    </p>
+                    <div class="d-flex gap-3">
+                      <div class="flex-column">
+                        <button onclick={() => openDetail(!details)} class="{window.innerWidth < 768 ? 'position-absolute text-primary btn p-0' : 'd-none'}" style="font-size: 0.8rem; margin-top: -1.2rem; cursor: pointer;">{details ? 'Lebih sedikit' : 'Selengkapnya'}</button>
+                        <a href={skill.url} target="_blank" class="text-decoration-none" style="font-style: italic;">Learn More</a>
+                        <div class="card-text"><small class="text-muted">Skill Level: <strong>{skill.progress}</strong>%</small></div>
+                      </div>
+                      <div class="flex-column">
+                        <span class="fw-bold"><small>My Favorite</small></span>
+                        <div class="stars">
+                          {#each Array(skill.star) as _}
+                            <i class="bi bi-star-fill text-warning"></i>
+                          {/each}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-md-2 d-flex align-items-center">
                     <img class="card-img-top" src={skill.image} alt={skill.title} />
@@ -94,13 +111,22 @@
         font-weight: bold;
         font-style: normal;
     }
+
+    .card span, small, u, p, strong, a {
+      color: var(--default-color);
+    }
+
+    .card-text, small, span, u, p, strong, a {
+      color: var(--default-color) !important;
+    }
     
     .card.linkedin-post {
         padding: 10px;
         border-left: 4px solid #0077b5;
         border-right: 4px solid #0077b5;
         border-top: 1px solid #0077b5;
-        background-color: #f9fcff;
+        background-color: var(--background-color);
+        color: var(--default-color);
     }
 
     .card.linkedin-post a {
@@ -136,6 +162,10 @@
 
       #skills .section-title p {
         font-size: 0.9rem;
+      }
+
+      .card {
+        top: 110px;
       }
       
       .card-body p {

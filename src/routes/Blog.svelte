@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { blogs } from '../portfolio-data.json';
+  import { t } from '../lang';
   
     // Inisialisasi card
     onMount(() => {
@@ -10,8 +11,8 @@
 
 <section id="blog" class="blog section">
     <div class="container section-title" data-aos="fade-up">
-      <h2>Catatan</h2>
-      <p>Terkadang di waktu luang atau gabut saya, saya membuat catatan mengenai teknologi yang saya pelajari. Tujuannya adalah sebagai dokumentasi tentang apa yang saya pelajari dan bagaimana saya memahami teknologi tersebut. Serta sebagai pengingat di masa yang akan datang.</p>
+      <h2>{$t('blog_title')}</h2>
+      <p>{$t('blog_desc')}</p>
     </div>
     <div class="container">
         <div class="sticky-cards-section" data-aos="fade-up" data-aos-delay="100">
@@ -68,8 +69,16 @@
     .card.linkedin-post {
         padding: 10px;
         border-left: 4px solid #0077b5;
-        background-color: #f9fcff;
+        background-color: var(--background-color);
         font-style: italic;
+    }
+
+    .card-text {
+        color: var(--default-color);
+    }
+
+    .card-text small {
+      color: var(--default-color) !important;
     }
 
     .card.linkedin-post a {

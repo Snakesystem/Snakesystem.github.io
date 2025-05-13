@@ -1,17 +1,16 @@
 <script>
+  import { t } from "../lang";
   import TypeingEffect from "../lib/TypeingEffect.svelte";
 
 </script>
-<section id="hero" class="hero section light-background">
+<section id="hero" class="hero section">             
   <img src="/img/hero-bg.jpeg" alt="" />
-
   <div class="container" data-aos="zoom-out">
     <div class="row justify-content-center">
       <div class="col-lg-9">
         <h2>Feri Irawansyah</h2>
-        <p>I'm 
+        <p>{$t("profesional")} 
          <TypeingEffect words={['Programmer', 'Developer', 'Freelancer', 'Software Engineer']} />
-        <!-- <span class="typed-cursor typed-cursor--blink" aria-hidden="true">from indonesia</span> -->
         </p>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/feri-irawansyah/" target="_blank"  aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
@@ -22,13 +21,13 @@
         </div>
         <nav id="custom-menu" class="custom-menu">
           <ul class="d-flex flex-row list-unstyled">
-            <li><a href="#hero" class="active" onclick={() => {}}><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-            <li><a href="#about" onclick={() => {}}><i class="bi bi-person navicon"></i><span>About</span></a></li>
-            <li><a href="#resume" onclick={() => {}}><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-            <li><a href="#portfolio" onclick={() => {}}><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-            <li><a href="#services" onclick={() => {}}><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-            <li><a href="#blog" onclick={() => {}}><i class="bi bi-journal navicon"></i><span>Catatan</span></a></li>
-            <li><a href="#contact" onclick={() => {}}><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+            <li><a href="#hero" class="active" onclick={() => {}}><i class="bi bi-house navicon"></i><span>{$t("home")}</span></a></li>
+            <li><a href="#about" onclick={() => {}}><i class="bi bi-person navicon"></i><span>{$t("about")}</span></a></li>
+            <li><a href="#resume" onclick={() => {}}><i class="bi bi-file-earmark-text navicon"></i><span>{$t("resume")}</span></a></li>
+            <li><a href="#portfolio" onclick={() => {}}><i class="bi bi-images navicon"></i><span>{$t("portfolio")}</span></a></li>
+            <li><a href="#services" onclick={() => {}}><i class="bi bi-hdd-stack navicon"></i><span>{$t("services")}</span></a></li>
+            <li><a href="#blog" onclick={() => {}}><i class="bi bi-journal navicon"></i><span>{$t("blog")}</span></a></li>
+            <li><a href="#contact" onclick={() => {}}><i class="bi bi-envelope navicon"></i><span>{$t("contact")}</span></a></li>
           </ul>
         </nav>
       </div>
@@ -36,7 +35,7 @@
   </div>
 </section>
 
-<style>
+<style scoped>
 
   .custom-menu {
     margin: 2rem 0 1rem -1rem;

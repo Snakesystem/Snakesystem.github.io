@@ -1,3 +1,7 @@
+<script>
+  import { t } from "../lang";
+
+</script>
 <section id="stats" class="stats section">
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -8,7 +12,7 @@
           <i class="bi bi-emoji-smile"></i>
           <div class="stats-item">
             <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Happy Clients</p>
+            <p>{$t("happy_client")}</p>
           </div>
         </div><!-- End Stats Item -->
 
@@ -16,7 +20,7 @@
           <i class="bi bi-journal-richtext"></i>
           <div class="stats-item">
             <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
+            <p>{$t("project_completed")}</p>
           </div>
         </div><!-- End Stats Item -->
 
@@ -24,7 +28,7 @@
           <i class="bi bi-headset"></i>
           <div class="stats-item">
             <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
+            <p>{$t("support")}</p>
           </div>
         </div><!-- End Stats Item -->
 
@@ -32,7 +36,7 @@
           <i class="bi bi-people"></i>
           <div class="stats-item">
             <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hard Workers</p>
+            <p>{$t("hard_worker")}</p>
           </div>
         </div><!-- End Stats Item -->
 

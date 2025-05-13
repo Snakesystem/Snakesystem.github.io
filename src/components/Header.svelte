@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { t } from '../lang';
 
   let isMenuOpen = false;
 
@@ -63,13 +64,14 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active" onclick={() => isMenuOpen = false}><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about" onclick={() => isMenuOpen = false}><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume" onclick={() => isMenuOpen = false}><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio" onclick={() => isMenuOpen = false}><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services" onclick={() => isMenuOpen = false}><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <li><a href="#blog" onclick={() => isMenuOpen = false}><i class="bi bi-journal navicon"></i><span>Catatan</span></a></li>
-        <li><a href="#contact" onclick={() => isMenuOpen = false}><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+        <!-- <li><a href={null} onclick={() => {}} style="cursor: pointer;"><i class="bi bi-sun"></i><span>{$t("theme_dark")}</span></a></li> -->
+        <li><a href="#hero" class="active" onclick={() => isMenuOpen = false}><i class="bi bi-house navicon"></i><span>{$t("home")}</span></a></li>
+        <li><a href="#about" onclick={() => isMenuOpen = false}><i class="bi bi-person navicon"></i><span>{$t("about")}</span></a></li>
+        <li><a href="#resume" onclick={() => isMenuOpen = false}><i class="bi bi-file-earmark-text navicon"></i><span>{$t("resume")}</span></a></li>
+        <li><a href="#portfolio" onclick={() => isMenuOpen = false}><i class="bi bi-images navicon"></i><span>{$t("portfolio")}</span></a></li>
+        <li><a href="#services" onclick={() => isMenuOpen = false}><i class="bi bi-hdd-stack navicon"></i><span>{$t("services")}</span></a></li>
+        <li><a href="#blog" onclick={() => isMenuOpen = false}><i class="bi bi-journal navicon"></i><span>{$t("blog")}</span></a></li>
+        <li><a href="#contact" onclick={() => isMenuOpen = false}><i class="bi bi-envelope navicon"></i><span>{$t("contact")}</span></a></li>
       </ul>
     </nav>
 

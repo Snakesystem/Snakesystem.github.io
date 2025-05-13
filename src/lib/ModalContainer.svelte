@@ -17,10 +17,15 @@
 
 </script>
 
-<Modal size={size} scrollable centered={centered} header={title} isOpen={$modal?.show} backdrop="static"
+<Modal size={size} fullscreen={size === "full"} scrollable centered={centered} header={title} isOpen={$modal?.show} backdrop="static"
     toggle={() => closeModal(id)}>
     <div class="modal-body">
         <slot></slot>
     </div>
 </Modal>
   
+<style>
+    .modal-body {
+        padding: 0;
+    }
+</style>

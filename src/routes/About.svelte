@@ -1,5 +1,6 @@
 <script>
   import Badge from "../components/Badge.svelte";
+  import { t } from "../lang";
 
   function hitungUsia(tanggalLahir) {
     const today = new Date();
@@ -26,8 +27,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>About</h2>
-      <p>Saya adalah seorang Software Engineer yang berdedikasi dalam membangun solusi digital yang efisien, scalable, dan user-friendly. Dengan latar belakang kuat di bidang pengembangan web, saya terbiasa bekerja dengan berbagai teknologi modern seperti JavaScript/TypeScript, Svelte, Rust, dan berbagai framework lainnya.</p>
+      <h2>{$t("about")}</h2>
+      <p>{$t("about_desc")}</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -42,24 +43,23 @@
         <div class="col-lg-8 content">
           <h2>Software Engineer &amp; Developer.</h2>
           <p class="fst-italic py-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            {$t("about_age")}
           </p>
           <div class="row">
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>9 June 2000</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>snakesystem.github.io</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 82323443535</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>DKI Jakarta, Indonesia</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>{$t("born")}:</strong> <span>{$t("birth_date")}</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>{$t("website")}:</strong> <span>www.snakesystem.github.io</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>{$t("phone")}:</strong> <span>+62 82323443535</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>{$t("city")}:</strong> <span>DKI Jakarta, Indonesia</span></li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{usiaSekarang}</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>{$t("age")}:</strong> <span>{usiaSekarang}</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>{$t("degree")}:</strong> <span>{$t("bachlor")}</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>feryirawansyah09@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>{$t("freelance")}:</strong> <span>{$t("availability")}</span></li>
               </ul>
             </div>
           </div>

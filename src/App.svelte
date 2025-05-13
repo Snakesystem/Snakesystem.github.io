@@ -1,6 +1,7 @@
 <script>
   import Footer from "./components/Footer.svelte";
   import Header from "./components/Header.svelte";
+  import Settings from "./components/Settings.svelte";
   import Stats from "./components/Stats.svelte";
   import About from "./routes/About.svelte";
   import Blog from "./routes/Blog.svelte";
@@ -55,7 +56,7 @@
     window.addEventListener('load', toggleScrollTop);
     document.addEventListener('scroll', toggleScrollTop);
 
-  })
+  });
   
 </script>
 
@@ -100,12 +101,11 @@
     <!-- /Testimonials Section -->
 
     <!-- Contact Section -->
-     <Contact/>
+    <Contact/>
     <!-- /Contact Section -->
-
 </main>
 <Footer/>
+<Settings/>
 <a href="/#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to Top"><i class="bi bi-arrow-up-short"></i></a>
-
 <!-- Preloader -->
 <!-- <div id="preloader"></div> -->

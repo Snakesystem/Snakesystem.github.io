@@ -1,9 +1,13 @@
+<script>
+  import { t } from "../lang";
+
+</script>
 <section id="resume" class="resume section">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Resume</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <h2>{$t('resume_title')}</h2>
+      <p>{$t('resume_desc')}</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -11,7 +15,7 @@
       <div class="row">
 
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="resume-title">Sumary</h3>
+          <h3 class="resume-title">{$t('resume_summary')}</h3>
 
           <div class="resume-item pb-0">
             <h4>Feri Irawansyah</h4>
@@ -26,41 +30,37 @@
           <h3 class="resume-title">Education</h3>
           
           <div class="resume-item">
-            <h4>Bachelor of Accounting &amp; Finance</h4>
+            <h4>{$t('resume_bachelor')}</h4>
             <h5>2019 - 2023</h5>
             <p><em>Universitas Pamulang, Tangerang, Indonesia</em></p>
-            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+            <p>{$t('resume_bachelor_desc')}</p>
           </div>
 
           <div class="resume-item">
-            <h4>Vocational High School</h4>
+            <h4>{$t('resume_vocation')}</h4>
             <h5>2016 - 2019</h5>
             <p><em>SMK Miftahul Ulum, Jawa Tengah, Indonesia</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            <p>{$t('resume_vocation_desc')}</p>
           </div>
 
         </div>
 
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="resume-title">Professional Experience</h3>
+          <h3 class="resume-title">{$t('resume_profesional')}</h3>
           <div class="resume-item">
             <h4>Web Developer</h4>
             <h5>2022 - Present</h5>
             <p><em>PT S21 Micropiranti Computer, Jakarta, Indonesia</em></p>
             <ul>
-              <li>Create a company profile website for your company</li>
-              <li>Developed and maintained responsive web applications for various client industries using modern web technologies (HTML5, CSS3, JavaScript, and popular frameworks like React and Angular). </li>
-              <li>Collaborated closely with UI/UX designers and backend developers to deliver tailored software solutions aligned with client requirements.</li>
-              <li>Integrated RESTful APIs and worked with databases ( Microsoft SQL Server) to support dynamic content.</li>
-              <li>Participated in code reviews, sprint planning, and regular stand-up meetings as part of an Agile development team.</li>
-              <li>Provided technical support, debugging, and post-deployment maintenance for delivered projects.</li>
-              <li>Contributed to documentation and user manuals for clients and internal teams.</li>
+              {#each Array(7) as _, i}
+                <li>{$t('resume_profesional_desc' + (i + 1))}</li>
+              {/each}
             </ul>
           </div><!-- Edn Resume Item -->
 
           <div class="resume-item">
-            <h4>More Experience</h4>
-            <a target="_blank" class="btn btn-primary btn-sm w-100" href="https://www.linkedin.com/in/feri-irawansyah/">See More Experience</a>
+            <h4>{$t('resume_more')}</h4>
+            <a target="_blank" class="btn btn-primary btn-sm w-100" href="https://www.linkedin.com/in/feri-irawansyah/">{$t('resume_more_link')}</a>
           </div><!-- Edn Resume Item -->
 
         </div>

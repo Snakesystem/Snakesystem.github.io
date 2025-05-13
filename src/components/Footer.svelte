@@ -1,7 +1,7 @@
-<footer id="footer" class="footer position-relative light-background">
+<footer id="footer" class="footer position-relative">
     <div class="container">
       <h3 class="sitename">Feri Irawansyah</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <!-- <p>.</p> -->
       <div class="social-links d-flex justify-content-center">
         <a href="https://www.linkedin.com/in/feri-irawansyah/" target="_blank"  aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/snakesystem/" aria-label="Github" target="_blank"><i class="bi bi-github"></i></a>
@@ -11,10 +11,10 @@
       </div>
       <div class="container">
         <div class="copyright">
-          <span>@</span> <strong class="px-1 sitename">Feri Irawansyah</strong> <span></span>
+          <span>&copy; <a href="https://github.com/snakesystem"><strong class="px-1 sitename">Feri Irawansyah</strong></a></span>
         </div>
         <div class="credits">
-          Designed & Distribuited by <a href="https://github.com/snakesystem">Snakesystem</a>
+          Powered by <a target="_blank" href="https://svelte.dev">Svelte</a>, <a target="_blank"  href="https://vite.dev/">Vite</a> & <a target="_blank"  href="https://www.rust-lang.org">Rust</a>— Distributed with ❤️
         </div>
       </div>
     </div>

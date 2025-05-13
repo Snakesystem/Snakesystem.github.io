@@ -7,9 +7,14 @@
   import PortfolioDetail from './PortfolioDetail.svelte';
   import { data } from '../portfolio-data.json';
   import imagesLoaded from 'imagesloaded';
+  import { t } from '../lang';
 
   let iso = null;
-  let detailData = $state({});
+  let detailData = $state({
+    title: '',
+    description: '',
+    image: '',
+  });
 
   onMount(() => {
     const container = document.querySelector('.isotope-container');
@@ -46,8 +51,8 @@
 
 <section id="portfolio" class="portfolio section">
   <div class="container section-title" data-aos="fade-up">
-    <h2>Portfolio</h2>
-    <p>Perjalanan saya di dunia teknologi tentunya menemukan banyak referensi dan case yang membantu saya untuk semakin mengembangkan keahlian saya di bidang teknologi.</p>
+    <h2>{$t('portfolio_title')}</h2>
+    <p>{$t('portfolio_desc')}</p>
   </div>
 
   <div class="container">
@@ -61,35 +66,22 @@
 
       <div class="row gy-4 isotope-container custom-container" data-aos="fade-up" data-aos-delay="200">
         {#each data as item}
-          <div class={`col-lg-4 col-md-6 portfolio-item isotope-item filter-${item.category}`}>
-            <img src={item.image} class="img-fluid" alt={item.title} />
+          <a href={null} onclick={() => {
+            openModal('portfolio-detail');
+            detailData = item
+          }} class={`col-lg-4 col-md-6 portfolio-item isotope-item filter-${item.category}`}>
+            <img src={item.image} class="img-fluid" alt={item.title}/>
             <div class="portfolio-info">
               <h4>{item.title}</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href={item.image}
-                title={item.title}
-                data-gallery={item.gallery}
-                data-description={item.description}
-                class="glightbox preview-link"
-                aria-label={item.title}
-              >
-                <i class="bi bi-zoom-in"></i>
-              </a>
-
-              <button onclick={() => {
-                openModal("portfolio-detail");
-                detailData = item
-              }} title="More Details" class="details-link" aria-label="More Details">
-                <i class="bi bi-link-45deg"></i>
-              </button>
+              <p>{item.description}</p>
             </div>
-          </div>
+          </a>
         {/each}
       </div>
     </div>
   </div>
 </section>
-<ModalContainer title="Modal title" size="xl" id="portfolio-detail">
+<ModalContainer title="Detail Portfolio {detailData.title}" size="full" id="portfolio-detail"  >
   <PortfolioDetail data={detailData}/>
 </ModalContainer>
 

@@ -1,4 +1,6 @@
 <script>
+  import { t } from "../lang";
+
   let formData = $state({
     name: "",
     email: "",
@@ -7,7 +9,7 @@
   });
 
   async function submit() {
-    const response = await fetch("https://snakesystem-web-api-tdam.shuttle.app/api/v1/email/contact", {
+    const response = await fetch("/api/email/contact", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {
@@ -27,8 +29,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p>Ingin bertanya lebih lanjut? Silahkan hubungi saya melalui kontak di bawah ini</p>
+      <h2>{$t('contact_title')}</h2>
+      <p>{$t('contact_desc')}</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade" data-aos-delay="100">
@@ -86,11 +88,8 @@
               </div>
 
               <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                <button type="submit">Send Message</button>
+                <button type="submit">{$t('send_message')}</button>
               </div>
 
             </div>
