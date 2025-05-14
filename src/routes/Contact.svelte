@@ -9,7 +9,7 @@
   });
 
   async function submit() {
-    const response = await fetch("https://snakesystem-web-api-tdam.shuttle.app/api/v1/email/contact", {
+    const response = await fetch("/api/email/contact", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {
