@@ -8,11 +8,13 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://snakesystem-web-api-tdam.shuttle.app/api/v1',
+        // target: 'http://localhost:8000/api/v1',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       },
       '/great': {
         target: 'https://snakesystem-web-api-tdam.shuttle.app',
+        // target: 'http://localhost:8000',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/great/, '')
       }

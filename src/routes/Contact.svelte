@@ -3,7 +3,7 @@
 
   let formData = $state({
     name: "",
-    email: "",
+    recipient: "",
     subject: "",
     message: "",
   });
@@ -76,7 +76,7 @@
               </div>
 
               <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required bind:value={formData.email}>
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required bind:value={formData.recipient}>
               </div>
 
               <div class="col-md-12">
