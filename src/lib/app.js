@@ -9,3 +9,19 @@ export const openModal = (/** @type {any} */ id) => {
 export const closeModal = (/** @type {any} */ id) => {
   modals.update((prev) => ({ ...prev, [id]: { show: false } }));
 };
+
+/**
+ * @param {any} errorFields
+ */
+export function BadRequest(errorFields) {
+  const formattedErrors = Object.entries(errorFields ?? {}).flatMap(
+    ([field, fieldErrors]) =>
+      fieldErrors.map(errObj => ({
+        field,
+        error: typeof errObj === "string"
+          ? errObj
+          : errObj.message ?? String(errObj),
+      }))
+  );
+  return formattedErrors[0] ? formattedErrors[0] : { field: "unknown", error: "Unknown error" };
+}

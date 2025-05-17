@@ -1127,6 +1127,7 @@ section,
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
+.contact .php-email-form select,
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -1139,12 +1140,14 @@ section,
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
+.contact .php-email-form select:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form select::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }

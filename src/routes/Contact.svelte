@@ -1,5 +1,7 @@
 <script>
   import { t } from "../lang";
+  import Swal from "sweetalert2";
+  import { BadRequest } from "../lib/app";
 
   let formData = $state({
     name: "",
@@ -8,20 +10,42 @@
     message: "",
   });
 
-  async function submit() {
-    const response = await fetch("https://snakesystem-web-api-tdam.shuttle.app/api/v1/email/contact", {
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: {
-        "Content-Type": "application/json",
-      }
+  async function submitContact() {
+  const response = await fetch("https://snakesystem-web-api-tdam.shuttle.app/api/v1/email/contact", {
+    method: "POST",
+    body: JSON.stringify(formData),
+    headers: { "Content-Type": "application/json" },
+  });
+  const data = await response.json();
+
+  if (response.ok) {
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: "Message sent successfully",
     });
-    if (response.ok) {
-      alert("Message sent");
-    } else {
-      alert("Error sending message");
-    }
+    return;
   }
+
+  if (response.status === 400) {
+    const badRequestError = BadRequest(data.error);
+
+    Swal.fire({
+      icon: "error",
+      title: data.message,
+      text: `${badRequestError.field}: ${badRequestError.error}`,
+    });
+  } else {
+    // Other errors
+    Swal.fire({
+      icon: "error",
+      title: data.message,
+      text: typeof data.error === "string"
+        ? data.error
+        : JSON.stringify(data.error),
+    });
+  }
+}
 
 </script>
 
@@ -67,23 +91,35 @@
         <div class="col-lg-8">
           <form class="php-email-form" data-aos="fade-up" data-aos-delay="200" onsubmit={(e) => {
             e.preventDefault();
-            submit();
+            submitContact();
           }}>
             <div class="row gy-4">
 
               <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required bind:value={formData.name}>
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Your Name" autocomplete="off" required bind:value={formData.name}>
               </div>
 
               <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required bind:value={formData.recipient}>
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Your Email" autocomplete="off" required bind:value={formData.recipient}>
               </div>
 
               <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required bind:value={formData.subject}>
+                <label for="subject" class="form-label">Service</label>
+                <!-- <input type="text" class="form-control" name="subject" placeholder="Subject" required bind:value={formData.subject}> -->
+                 <select class="form-control" id="subject" name="subject" required bind:value={formData.subject}>
+                   <option value="" class="text-muted">--- Pilih Layanan Email ---</option>
+                   <option value="KONSULTASI">KONSULTASI APLIKASI</option>
+                   <option value="PEMESANAN APLIKASI">PEMESANAN APLIKASI</option>
+                   <option value="PENAMBAHAN FITUR">PENAMBAHAN FITUR BARU</option>
+                   <option value="KERJASAMA">KERJASAMA DENGAN KAMI</option>
+                   <option value="PENAWARAN KERJA">PENAWARAN PEKERJAAN</option>
+                 </select>
               </div>
 
               <div class="col-md-12">
+                <label for="message" class="form-label">Message</label>
                 <textarea class="form-control" name="message" rows="6" placeholder="Message" required bind:value={formData.message}></textarea>
               </div>
 
@@ -115,5 +151,6 @@
     #contact .section-title p {
       font-size: 0.9rem;
     }
+
   }
 </style>
