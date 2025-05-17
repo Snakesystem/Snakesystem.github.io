@@ -3,6 +3,8 @@
   import Swal from "sweetalert2";
   import { BadRequest } from "../lib/app";
 
+  let loading = $state(false);
+
   let formData = $state({
     name: "",
     recipient: "",
@@ -11,46 +13,58 @@
   });
 
   async function submitContact() {
-  const response = await fetch("https://snakesystem-web-api-tdam.shuttle.app/api/v1/email/contact", {
-    method: "POST",
-    body: JSON.stringify(formData),
-    headers: { "Content-Type": "application/json" },
-  });
-  const data = await response.json();
-
-  if (response.ok) {
-    Swal.fire({
-      icon: "success",
-      title: "Success",
-      text: "Message sent successfully",
+    loading = true;
+    const response = await fetch("https://snakesystem-web-api-tdam.shuttle.app/api/v1/email/contact", {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: { "Content-Type": "application/json" },
     });
-    return;
+    const data = await response.json();
+
+    if (response.ok) {
+      loading = false;
+      formData = {
+        name: "",
+        recipient: "",
+        subject: "",
+        message: "",
+      }
+      Swal.fire({
+        icon: "success",
+        title: "Success",
+        text: "Message sent successfully",
+      });
+      return;
+    }
+
+    if (response.status === 400) {
+      loading = false;
+      const badRequestError = BadRequest(data.error);
+
+      Swal.fire({
+        icon: "error",
+        title: data.message,
+        text: `${badRequestError.field}: ${badRequestError.error}`,
+      });
+    } else {
+      loading = false;
+      // Other errors
+      Swal.fire({
+        icon: "error",
+        title: data.message,
+        text: typeof data.error === "string"
+          ? data.error
+          : JSON.stringify(data.error),
+      });
+    }
   }
-
-  if (response.status === 400) {
-    const badRequestError = BadRequest(data.error);
-
-    Swal.fire({
-      icon: "error",
-      title: data.message,
-      text: `${badRequestError.field}: ${badRequestError.error}`,
-    });
-  } else {
-    // Other errors
-    Swal.fire({
-      icon: "error",
-      title: data.message,
-      text: typeof data.error === "string"
-        ? data.error
-        : JSON.stringify(data.error),
-    });
-  }
-}
 
 </script>
 
 <section id="contact" class="contact section">
-
+{#if loading === true}
+<div id="preloader"></div>
+{/if}
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>{$t('contact_title')}</h2>
@@ -151,6 +165,6 @@
     #contact .section-title p {
       font-size: 0.9rem;
     }
-
+    
   }
 </style>
