@@ -49,7 +49,7 @@
             <div class="col-lg-6">
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>{$t("born")}:</strong> <span>{$t("birth_date")}</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>{$t("website")}:</strong> <span>www.snakesystem.github.io</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>{$t("website")}:</strong> <span>www.feri-irawansyah.github.io</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>{$t("phone")}:</strong> <span>+62 82323443535</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>{$t("city")}:</strong> <span>DKI Jakarta, Indonesia</span></li>
               </ul>
