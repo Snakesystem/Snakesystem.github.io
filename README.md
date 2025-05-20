@@ -1,47 +1,44 @@
-# Svelte + Vite
+![Header](https://github.com/user-attachments/assets/86c86d08-03f0-4bd8-8616-45fac457d790)
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=feri-irawansyah&label=Profile%20views&color=0e75b6&style=flat" alt="feri-irawansyah" /> </p>
 
-This template should help get you started developing with Svelte in Vite.
+- 🔭 I’m currently working **Web Developer** on [S21 Micropiranti Computer](https://micropiranti.com/)
 
-## Recommended IDE Setup
+- 👯 I’m looking to collaborate on [Github](https://github.com/feri-irawansyah)
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- 📫 How to reach me **feryirawansyah09@gmail.com**
+- 📄 Know about my experiences [https://www.linkedin.com/in/feri-irawansyah/](https://www.linkedin.com/in/feri-irawansyah/)
+- ⚡ Fun fact **I like to learn new things.**
 
-## Need an official Svelte framework?
+# 💻 Programming & Tools
+<p align="left"><img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=feri-irawansyah&layout=compact&langs_count=10&exclude_repo=true?&cache_seconds=60" alt="snakesystem" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=feri-irawansyah&theme=radical&?cache_seconds=60" alt="snakesystem" /> 
+</p>
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+### Programming Language
+<p align="start">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=rust,js,html,css,cs,ts,python" />
+  </a>
+</p>
 
-## Technical considerations
+### Tech Stack
+<p align="start">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=actix,vite,svelte,bun,nodejs,dotnet,flask,react,bootstrap,sass,tauri,express" />
+  </a>
+</p>
 
-**Why use this over SvelteKit?**
+### Others
+<p align="start">
+  <a href="https://skillicons.dev">
+    <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a>
+    <img src="https://skillicons.dev/icons?i=postgres,mongo,redis,sqlite,git,vercel,netlify,prisma,ubuntu,vitest,nginx,docker,kubernetes" />
+  </a>
+</p>
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+# 📩 Connect With Me
+<p align="left">
+<a href="https://www.linkedin.com/in/feri-irawansyah/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/feri-irawansyah/" height="30" width="40" /></a>
+<a href="https://www.instagram.com/fery_ir.1/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="fery_ir.1" height="30" width="40" /></a> <a href="https://medium.com/@snakesystem" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="fery_ir.1" height="30" width="40" /></a>
+<a href="https://x.com/iraonesyah100" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Feri" height="25" width="35" /></a>
+</p>
