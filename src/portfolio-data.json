@@ -47,6 +47,16 @@
               "name": "Handlebars",
               "link": "https://handlebarsjs.com/",
               "img": "/img/skills/handlebars.svg"
+            },
+            {
+              "name": "Web Socket",
+              "link": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API", 
+              "img": "/img/skills/websocket.svg"
+            },
+            {
+              "name": "SMTP Server",
+              "link": "https://www.smtp.com",
+              "img": "/img/skills/smtp.png"
             }
           ]
         },
@@ -94,6 +104,61 @@
               "img": "/img/skills/lottiefiles.png"
             }
           ]        
+        },
+        {
+          "title": "Snakesystem Export & Import Data",
+          "category": "web-api",
+          "image": "/img/portfolio/liveapp.png",
+          "gallery": "portfolio-gallery-web-api",
+          "description": "Ini merupakah aplikasi implementasi dari background prosess untuk melakukan import data dari file, CSV, TXT, XLSX, DBF dan XML. Serta export data ke file, CSV, TXT, XLSX, DBF dan XML. Aplikasi ini lebih berfokus ke RESTful API dengan fitur Transaction, Locking dan Batch dan dilengkapi juga dengan web socket untuk memantau progress di background.",
+          "link": "https://export-import-file.vercel.app/",
+          "techs": [
+            {
+              "name": "Rust",
+              "link": "https://www.rust-lang.org/",
+              "img": "/img/skills/rust.png"
+            },
+            {
+              "name": "Actix Web",
+              "link": "https://actix.rs/",
+              "img": "/img/skills/actix.png"
+            },
+            {
+              "name": "Microsoft SQL Server",
+              "link": "https://www-microsoft-com.translate.goog/en-us/sql-server/sql-server-downloads?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc",
+              "img": "/img/skills/mssql.png"
+            },
+            {
+              "name": "Web Socket",
+              "link": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API", 
+              "img": "/img/skills/websocket.svg"
+            },
+            {
+              "name": "Javascript",
+              "link": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Adding_interactivity",
+              "img": "/img/skills/js.png"
+            },
+            {
+              "name": "Svelte",
+              "link": "https://svelte.dev",
+              "img": "/img/skills/svelte.png"
+            },
+            {
+              "name": "Bootstrap",
+              "link": "https://getbootstrap.com",
+              "img": "/img/skills/bootstrap.png"
+            },
+            {
+              "name": "CSS",
+              "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+              "img": "/img/skills/css.png"
+            },
+            {
+              "name": "Bootstrap table",
+              "link": "https://bootstrap-table.com",
+              "img": "/img/skills/bt.png"
+            }
+          ]
         },
         {
           "title": "UBS Trade Dashboard Web API",
@@ -178,10 +243,10 @@
         {
           "title": "Snakesystem Library",
           "category": "frontend",
-          "image": "",
+          "image": "/img/portfolio/library.png",
           "gallery": "portfolio-gallery-frontend",
-          "description": "Aplikasi perpustakaan snakesystem",
-          "link": "",
+          "description": "Aplikasi nlog atau catatan ringan tentang perjalananku disunia teknologi. DIdalamnya terdapat catatan seperti bahasa pemrograman yang aku pelajari dan ada beberapa studi kasus mengenai suatu teknologi yang aku gunakan.",
+          "link": "https://snakesystem-library.vercel.app/",
           "techs": [
             {
               "name": "Javascript",
@@ -214,9 +279,24 @@
               "img": "/img/skills/sveltestrap.png"
             },
             {
-              "name": "Lottie Files",
-              "link": "https://lottiefiles.com",
-              "img": "/img/skills/lottiefiles.png"
+              "name": "Actix Web",
+              "link": "https://actix.rs/",
+              "img": "/img/skills/actix.png"
+            },
+            {
+              "name": "Rust",
+              "link": "https://www.rust-lang.org/",
+              "img": "/img/skills/rust.png"
+            },
+            {
+              "name": "Postgre SQL",
+              "link": "https://www.postgresql.org/",
+              "img": "/img/skills/postgresql.png"
+            },
+            {
+              "name": "Json Web Token",
+              "link": "https://jwt.io", 
+              "img": "/img/skills/jwt.svg"
             }
           ]        
         },
@@ -271,7 +351,7 @@
         {
             "title": "Actix Web x Microsoft SQL Server 🚀",
             "description": "Integrasi Actix Web dengan Microsoft SQL Server memerlukan asynchronous dengan tokio.",
-            "url": "#",
+            "url": "https://snakesystem-library.vercel.app/#/notes/technology/connect-mssql-with-rust",
             "image": "/img/blog/actix-web-mssql.png",
             "updated_at": "2023-02-22T10:00:00+07:00"
         },
@@ -560,6 +640,16 @@
             "progress": 70,
             "category": "others",
             "star": 4
+        },
+        {
+            "title": "Web Socket",
+            "description": "websocket_desc",
+            "url": "#",
+            "image": "/img/skills/websocket.svg",
+            "updated_at": "Agustus 2032",
+            "progress": 80,
+            "category": "others",
+            "star": 5
         },
         {
             "title": "Redis",
